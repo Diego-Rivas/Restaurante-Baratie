@@ -1,0 +1,39 @@
+/* --- CSS Estrictamente Necesario (Identidad Visual) --- */
+        :root {
+            --fondo-gris: #eaebef;
+            --nav-oscuro: #0f1626;
+            --azul-primario: #1d64f2;
+        }
+
+        body {
+            background-color: var(--fondo-gris);
+            font-family: system-ui, -apple-system, sans-serif;
+            color: #1f2937;
+        }
+
+        /* Navbar personalizado */
+        .navbar-personalizada { background-color: var(--nav-oscuro); }
+        .nav-link { color: #9ca3af !important; transition: 0.2s; }
+        .nav-link:hover, .nav-link.nav-activo { color: #ffffff !important; }
+        .nav-link.nav-activo { background-color: #1f293d; }
+
+        /* Pestañas internas */
+        .btn-filtro-pasante { color: #6b7280; transition: 0.2s; border-bottom: 3px solid transparent; }
+        .btn-filtro-pasante.activo { color: var(--azul-primario); border-bottom-color: var(--azul-primario); }
+
+        /* Inputs de estilo "Línea" (No existen en Bootstrap base) */
+        .input-registro-linea {
+            border: none;
+            border-bottom: 2px solid #cbd5e1;
+            background: transparent;
+            transition: 0.2s;
+        }
+        .input-registro-linea:focus {
+            outline: none;
+            border-bottom-color: var(--azul-primario);
+        }
+
+        /* Ajustes de tabla */
+        .tabla-pasantes td {
+             vertical-align: middle; padding: 1rem 1.5rem;
+            }

@@ -1,0 +1,113 @@
+:root {
+            --fondo-claro: #f4f5f7;
+            --menu-oscuro: #121826;
+            --azul-primario: #1c64f2;
+        }
+
+        body {
+            background-color: var(--fondo-claro);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            color: #1f2937;
+        }
+
+        /* --- Barra de Navegación --- */
+        .barra-personalizada {
+            background-color: var(--menu-oscuro);
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            color: #9ca3af !important;
+            font-weight: 500;
+            margin: 0 5px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .nav-link:hover { color: #ffffff !important; }
+        .nav-link.enlace-activo {
+            background-color: #1a56db;
+            color: #ffffff !important;
+        }
+
+        /* --- Tarjetas Generales --- */
+        .tarjeta-personalizada {
+            border-radius: 16px;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        /* --- Barra Lateral Izquierda (Filtros) --- */
+        .contenedor-entrada-busqueda { position: relative; }
+        .contenedor-entrada-busqueda .bi-search {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6b7280;
+        }
+        
+        /* Casillas de verificación personalizadas */
+        .casilla-personalizada .form-check-input {
+            border-radius: 4px;
+            border-color: #d1d5db;
+        }
+        .casilla-personalizada .form-check-input:checked {
+            background-color: var(--azul-primario);
+            border-color: var(--azul-primario);
+        }
+
+        /* --- Centro (Asignaciones) --- */
+        .tarjeta-asignacion {
+            border-radius: 16px;
+            border: 1px solid #f3f4f6;
+            transition: 0.2s;
+        }
+        .tarjeta-asignacion:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-color: #e5e7eb;
+        }
+        .caja-icono-asignacion {
+            width: 70px;
+            height: 70px;
+            background-color: #eff6ff; 
+            color: var(--azul-primario);
+            border-radius: 12px;
+            flex-shrink: 0;
+            font-size: 1.8rem;
+        }
+        .nombre-modulo {
+            color: var(--azul-primario);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .nombre-modulo:hover { text-decoration: underline; }
+
+        /* Botones personalizados basados en tu paleta */
+        .boton-lineas-primario-personalizado {
+            color: var(--azul-primario);
+            border: 1px solid var(--azul-primario);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .boton-lineas-primario-personalizado:hover { background-color: #f0f5ff; }
+        
+        .boton-primario-personalizado {
+            background-color: var(--azul-primario);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .boton-primario-personalizado:hover {
+            background-color: #1a56db;
+            color: white;
+        }
+
+        /* --- Barra Lateral Derecha (Perfil) --- */
+        .imagen-perfil {
+            width: 80px;
+            height: 80px;
+            background-color: #9ca3af;
+        }

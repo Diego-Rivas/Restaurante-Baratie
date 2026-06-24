@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - ITR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/estudianteCSS/perfilEstudiante.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-personalizado mx-4 mt-3 mb-4 py-2 px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold me-4" href="#">
+            <span class="text-warning">●</span> RICALDONE
+        </a>
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link py-2 px-3" href="./indexEstudiante.html"><i class="bi bi-briefcase me-1"></i> Inicio</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./vacantes.html"><i class="bi bi-briefcase me-1"></i> Vacantes</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./postulacionesEstudiante.html"><i class="bi bi-file-earmark-text me-1"></i> Postulaciones</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./ofertasGuardadas.html"><i class="bi bi-bookmark me-1"></i> Postulaciones Guardadas</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./asignacionesEstudiante.html"><i class="bi bi-check2-square me-1"></i> Asignaciones</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">3</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid px-4 pb-5">
+    <div class="row">
+        
+        <div class="col-lg-8 mb-4">
+            
+            <div class="card tarjeta-personalizada position-relative mb-4">
+                <button class="btn-editar-perfil"><i class="bi bi-pencil-fill me-2"></i>Editar perfil</button>
+                
+                <div class="portada-perfil">
+                    <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,128C640,139,800,181,960,192C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+                    </svg>
+                </div>
+
+                <div class="px-4 pb-4">
+                    <div class="contenedor-avatar-perfil mb-3">
+                        <div class="avatar-perfil rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-person-fill text-white" style="font-size: 5rem;"></i>
+                        </div>
+                        <div class="insignia-editar-avatar rounded-circle d-flex align-items-center justify-content-center"><i class="bi bi-pencil text-muted" style="font-size: 0.75rem;"></i></div>
+                    </div>
+
+                    <h4 class="fw-bold mb-0">Usuario</h4>
+                    <p class="text-muted fw-bold small mb-1">Development de Software</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="text-muted small me-3"><i class="bi bi-geo-alt me-1"></i> La Paz, El Salvador</span>
+                        <span class="fw-bold" style="color: #10b981; font-size: 0.85rem;"><i class="bi bi-circle-fill me-1" style="font-size: 0.5rem;"></i> Disponible para oportunidades</span>
+                    </div>
+
+                    <p class="text-muted" style="font-size: 0.9rem; max-width: 85%;">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore maxime dolores voluptates consequatur laudantium delectus cum, fuga aperiam, quidem sed voluptas quas perferendis illo vitae culpa, mollitia tempore dsadss
+                    </p>
+
+                    <div class="bg-light rounded-3 p-3 d-flex justify-content-between mb-4">
+                        <div class="d-flex flex-column" style="font-size: 0.8rem;">
+                            <span class="text-secondary fw-semibold mb-1" style="color: #9ca3af !important;">Especialidad</span>
+                            <span class="fw-semibold text-secondary" style="color: #4b5563 !important;">Desarrollo de Software</span>
+                        </div>
+                        <div class="d-flex flex-column" style="font-size: 0.8rem;">
+                            <span class="text-secondary fw-semibold mb-1" style="color: #9ca3af !important;">Sección</span>
+                            <span class="fw-semibold text-secondary" style="color: #4b5563 !important;">B1</span>
+                        </div>
+                        <div class="d-flex flex-column" style="font-size: 0.8rem;">
+                            <span class="text-secondary fw-semibold mb-1" style="color: #9ca3af !important;">Correo</span>
+                            <span class="fw-semibold valor-info-perfil"><a href="mailto:CorreoDePractica@gmail.com">CorreoDePractica@gmail.com</a></span>
+                        </div>
+                        <div class="d-flex flex-column" style="font-size: 0.8rem;">
+                            <span class="text-secondary fw-semibold mb-1" style="color: #9ca3af !important;">Teléfono</span>
+                            <span class="fw-semibold text-secondary" style="color: #4b5563 !important;">+503 7733 2365</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center px-2">
+                        <div class="d-flex align-items-center">
+                            <div class="icono-estadistica bg-primary rounded-circle d-flex align-items-center justify-content-center text-white fs-5 me-3"><i class="bi bi-briefcase-fill"></i></div>
+                            <div>
+                                <div class="fw-bold fs-5 lh-1">12</div>
+                                <div class="text-muted small fw-bold">Postulaciones</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="icono-estadistica bg-success rounded-circle d-flex align-items-center justify-content-center text-white fs-5 me-3"><i class="bi bi-folder-fill"></i></div>
+                            <div>
+                                <div class="fw-bold fs-5 lh-1">3</div>
+                                <div class="text-muted small fw-bold">Proyectos</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center me-5">
+                            <div class="icono-estadistica bg-purple rounded-circle d-flex align-items-center justify-content-center text-white fs-5 me-3" style="background-color: #8b5cf6 !important;"><i class="bi bi-code-slash"></i></div>
+                            <div>
+                                <div class="fw-bold fs-5 lh-1">5</div>
+                                <div class="text-muted small fw-bold">Habilidades</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3 px-2">
+                <h5 class="fw-bold mb-0">Portafolio</h5>
+                <a href="#" class="text-decoration-none fw-bold" style="color: var(--azul-primario);"><i class="bi bi-plus-lg me-1"></i> Agregar proyecto</a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card tarjeta-personalizada h-100 p-0 border-0">
+                        <div class="imagen-portafolio"></div>
+                        <div class="p-3">
+                            <h6 class="fw-bold" style="font-size: 0.9rem;">Sistema de inventario</h6>
+                            <p class="text-muted mb-2" style="font-size: 0.75rem; line-height: 1.2;">Sistema web para gestión de inventarios con reportes</p>
+                            <a href="#" class="text-dark fw-bold text-decoration-underline" style="font-size: 0.75rem;">https://github.com/Adriel-Avalos/CafeRepo.git</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tarjeta-personalizada h-100 p-0 border-0">
+                        <div class="imagen-portafolio"></div>
+                        <div class="p-3">
+                            <h6 class="fw-bold" style="font-size: 0.9rem;">App Restaurante</h6>
+                            <p class="text-muted mb-2" style="font-size: 0.75rem; line-height: 1.2;">Aplicación móvil para pedidos de comida en línea.</p>
+                            <a href="#" class="text-dark fw-bold text-decoration-underline" style="font-size: 0.75rem;">https://github.com/Adriel-Avalos/CafeRepo.git</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card tarjeta-personalizada h-100 p-0 border-0">
+                        <div class="imagen-portafolio"></div>
+                        <div class="p-3">
+                            <h6 class="fw-bold" style="font-size: 0.9rem;">Gestor de Tareas</h6>
+                            <p class="text-muted mb-2" style="font-size: 0.75rem; line-height: 1.2;">Aplicación web para gestión de tareas y proyectos</p>
+                            <a href="#" class="text-dark fw-bold text-decoration-underline" style="font-size: 0.75rem;">https://github.com/Adriel-Avalos/CafeRepo.git</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            
+            <div class="card tarjeta-personalizada p-4 mb-4">
+                <h6 class="fw-bold mb-4">Completa tu perfil</h6>
+                <div class="d-flex align-items-center">
+                    
+                    <div class="circulo-progreso rounded-circle d-flex align-items-center justify-content-center me-4" style="background: conic-gradient(var(--azul-primario) 75%, #e5e7eb 0);">
+                        <div class="circulo-progreso-interno rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="fw-bold mb-0 lh-1">75%</h4>
+                            <span class="text-muted" style="font-size: 0.65rem;">completado</span>
+                        </div>
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <div class="d-flex align-items-center justify-content-between mb-2 text-secondary" style="font-size: 0.85rem; color: #4b5563 !important;">
+                            <div><i class="bi bi-dash text-secondary me-1"></i> Foto de perfil</div>
+                            <i class="bi bi-check-circle-fill text-success fs-6"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-2 text-secondary" style="font-size: 0.85rem; color: #4b5563 !important;">
+                            <div><i class="bi bi-dash text-secondary me-1"></i> Información personal</div>
+                            <i class="bi bi-check-circle-fill text-success fs-6"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-2 text-secondary" style="font-size: 0.85rem; color: #4b5563 !important;">
+                            <div><i class="bi bi-dash text-secondary me-1"></i> Habilidades</div>
+                            <i class="bi bi-check-circle-fill text-success fs-6"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-0 text-secondary" style="font-size: 0.85rem; color: #4b5563 !important;">
+                            <div><i class="bi bi-dash text-secondary me-1"></i> Portafolio</div>
+                            <i class="bi bi-x-circle-fill" style="color: #fc8181; font-size: 1.1rem;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card tarjeta-personalizada p-4">
+                <h6 class="fw-bold mb-4">Horas Sociales</h6>
+                <div class="d-flex align-items-center">
+                    
+                    <div class="circulo-progreso rounded-circle d-flex align-items-center justify-content-center me-4" style="background: conic-gradient(var(--azul-primario) 50%, #e5e7eb 0);">
+                        <div class="circulo-progreso-interno rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="fw-bold mb-0 lh-1">50%</h4>
+                            <span class="text-muted" style="font-size: 0.65rem;">completado</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="fw-bold mb-0">100<span class="text-muted" style="font-size: 1.1rem;">/200 horas</span></h4>
+                        <p class="text-muted fw-bold small mb-0">Horas completadas</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

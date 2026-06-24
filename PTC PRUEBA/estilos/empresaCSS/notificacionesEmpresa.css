@@ -1,0 +1,166 @@
+/* --- variables globales de CSS para colores y bordes --- */
+        :root {
+            --fondo-claro: #eaebef;
+            --nav-oscuro: #0f1626;
+            --azul-primario: #1d64f2;
+            --texto-atenuado: #6b7280;
+            --radio-borde-tarjeta: 16px;
+        }
+
+        body {
+            background-color: var(--fondo-claro);
+            font-family: system-ui, -apple-system, sans-serif;
+            font-size: 0.9rem;
+            color: #1f2937;
+        }
+
+        /* --- Estilos de la Barra de Navegación (Navbar) --- */
+        .navbar-personalizada {
+            background-color: var(--nav-oscuro);
+            border-radius: 30px;
+            padding: 0.7rem 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            color: #9ca3af !important;
+            font-weight: 500;
+            margin: 0 5px;
+            padding: 8px 16px !important;
+            border-radius: 20px;
+            transition: 0.2s;
+        }
+        .nav-link:hover { color: #ffffff !important; }
+        .nav-link.nav-activo {
+            background-color: #1f293d;
+            color: #ffffff !important;
+        }
+
+        /* --- Estilos para Tarjetas Contenedoras (Cards) --- */
+        .tarjeta-personalizada {
+            background: white;
+            border-radius: var(--radio-borde-tarjeta);
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            margin-bottom: 20px;
+        }
+
+        /* --- Estilos del Panel Lateral Izquierdo (Filtros) --- */
+        .item-filtro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: #4b5563;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 5px;
+            transition: 0.2s;
+        }
+        .item-filtro:hover { background-color: #f3f4f6; }
+        .item-filtro.activo {
+            background-color: #e1effe;
+            color: var(--azul-primario);
+        }
+        .icono-filtro { width: 24px; text-align: center; margin-right: 10px; font-size: 1.1rem; }
+        
+        /* Interruptores (Switches) de las Preferencias */
+        .form-switch .form-check-input {
+            width: 2.5em;
+            height: 1.25em;
+        }
+        .form-switch .form-check-input:checked {
+            background-color: #10b981;
+        }
+
+        /* --- Estilos de la Sección Central (Lista de Notificaciones) --- */
+        .tarjeta-notificacion {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px 20px;
+            border-radius: 12px;
+            transition: 0.2s;
+            margin-bottom: 10px;
+        }
+        .tarjeta-notificacion:hover { background-color: #f9fafb; }
+        .circulo-icono {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .punto-sin-leer {
+            width: 10px;
+            height: 10px;
+            background-color: var(--azul-primario);
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* Variantes de color para los círculos de las notificaciones */
+        .fondo-icono-azul { background-color: #e1effe; color: #1e429f; }
+        .fondo-icono-verde { background-color: #def7ec; color: #046c4e; }
+        .fondo-icono-purpura { background-color: #f3e8ff; color: #6b21a8; }
+        .fondo-icono-naranja { background-color: #fef3c7; color: #d97706; }
+        .fondo-icono-rojo { background-color: #fde8e8; color: #c81e1e; }
+
+        /* --- Estilos del Panel Lateral Derecho (Perfil y Consejos) --- */
+        .imagen-perfil {
+            width: 75px;
+            height: 75px;
+            background-color: #cbd5e1;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .punto-estado {
+            width: 8px;
+            height: 8px;
+            background-color: #10b981;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .item-consejo { display: flex; margin-bottom: 15px; }
+        .icono-consejo {
+            width: 35px;
+            height: 35px;
+            background-color: #e1effe;
+            color: var(--azul-primario);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        /* --- Estilos de las Ventanas Modales --- */
+        .modal-content {
+            border-radius: 20px;
+            border: none;
+            padding: 10px;
+        }
+        .tarjeta-opcion-modal {
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 15px;
+            cursor: pointer;
+            transition: 0.2s;
+            height: 100%;
+        }
+        .tarjeta-opcion-modal:hover {
+            border-color: var(--azul-primario);
+            background-color: #f8fafc;
+        }
+        .caja-icono-modal {
+            width: 40px; height: 40px;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }

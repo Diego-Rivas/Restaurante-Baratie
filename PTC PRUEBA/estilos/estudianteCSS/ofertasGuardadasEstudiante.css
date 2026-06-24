@@ -1,0 +1,110 @@
+:root {
+            --fondo-claro: #f4f5f7;
+            --nav-oscuro: #121826;
+            --azul-primario: #1c64f2;
+        }
+
+        body {
+            background-color: var(--fondo-claro);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            color: #1f2937;
+        }
+
+        /* --- Barra de Navegación --- */
+        .navbar-personalizado {
+            background-color: var(--nav-oscuro);
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .enlace-nav {
+            color: #9ca3af !important;
+            font-weight: 500;
+            margin: 0 5px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .enlace-nav:hover { 
+            color: #ffffff !important; 
+        }
+        .nav-activo {
+            background-color: #1a56db;
+            color: #ffffff !important;
+        }
+
+        /* --- Tarjetas Estilo Base --- */
+        .tarjeta-personalizada {
+            border-radius: 16px;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        /* --- Centro (Vacantes Guardadas) --- */
+        .tarjeta-vacante {
+            border-radius: 16px;
+            border: 1px solid #f3f4f6;
+            transition: 0.2s;
+        }
+        .tarjeta-vacante:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            border-color: #e5e7eb;
+        }
+        .logo-empresa {
+            width: 85px;
+            height: 85px;
+            background-color: #d1d5db;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+        .nombre-empresa {
+            color: var(--azul-primario);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+        .nombre-empresa:hover { 
+            text-decoration: underline; 
+        }
+        
+        /* Botón Guardado Activo (Rojo/Rosa sutil) */
+        .btn-marcador-activo {
+            background-color: #fef2f2;
+            color: #ef4444;
+            width: 38px;
+            height: 38px;
+            border-radius: 8px;
+            border: 1px solid #fee2e2;
+            transition: 0.2s;
+        }
+        .btn-marcador-activo:hover {
+            background-color: #fee2e2;
+        }
+
+        .btn-lineas-primario-personalizado {
+            color: var(--azul-primario);
+            border: 1px solid var(--azul-primario);
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .btn-lineas-primario-personalizado:hover {
+            background-color: #f0f5ff;
+        }
+        .btn-primario-personalizado {
+            background-color: var(--azul-primario);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .btn-primario-personalizado:hover {
+            background-color: #1a56db;
+        }
+
+        /* --- Columnas Laterales --- */
+        .imagen-perfil {
+            width: 80px;
+            height: 80px;
+            background-color: #9ca3af;
+        }

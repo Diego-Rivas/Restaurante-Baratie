@@ -1,0 +1,116 @@
+:root {
+            --fondo-claro: #f4f5f7;
+            --nav-oscuro: #121826;
+            --azul-primario: #1c64f2;
+        }
+
+        body {
+            background-color: var(--fondo-claro);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            color: #1f2937;
+        }
+
+        /* --- Barra de Navegación --- */
+        .navbar-personalizado {
+            background-color: var(--nav-oscuro);
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .enlace-nav {
+            color: #9ca3af !important;
+            font-weight: 500;
+            margin: 0 5px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .enlace-nav:hover { color: #ffffff !important; }
+
+        /* --- Tarjetas Estilo Base --- */
+        .tarjeta-personalizada {
+            border-radius: 16px;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        /* --- Portada y Avatar del Perfil --- */
+        .portada-perfil {
+            position: relative;
+            height: 160px;
+            background-color: #d1d5db;
+            border-radius: 16px 16px 0 0;
+            overflow: hidden;
+        }
+        .portada-perfil svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+        .contenedor-avatar-perfil {
+            position: relative;
+            margin-top: -65px;
+            margin-left: 30px;
+            display: inline-block;
+        }
+        .avatar-perfil {
+            width: 120px;
+            height: 120px;
+            background-color: #9ca3af;
+            border: 5px solid #ffffff;
+        }
+        .insignia-editar-avatar {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background-color: white;
+            border: 1px solid #d1d5db;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+        .btn-editar-perfil {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #e5e7eb;
+            color: #4b5563;
+            border: none;
+            font-weight: 600;
+            padding: 6px 15px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            z-index: 10;
+            transition: 0.2s;
+        }
+        .btn-editar-perfil:hover { background-color: #d1d5db; }
+
+        .valor-info-perfil a {
+            color: var(--azul-primario);
+            text-decoration: underline;
+        }
+
+        /* --- Iconos de Estadísticas --- */
+        .icono-estadistica {
+            width: 45px;
+            height: 45px;
+        }
+
+        /* --- Sección Portafolio --- */
+        .imagen-portafolio {
+            height: 120px;
+            background-color: #d1d5db;
+            border-radius: 12px 12px 0 0;
+        }
+
+        /* --- Círculos de Progreso Dinámicos --- */
+        .circulo-progreso {
+            width: 110px;
+            height: 110px;
+        }
+        .circulo-progreso-interno {
+            width: 85px;
+            height: 85px;
+            background-color: white;
+        }

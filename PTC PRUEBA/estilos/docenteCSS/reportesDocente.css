@@ -1,0 +1,149 @@
+:root {
+            --fondo-claro: #f4f5f7;
+            --nav-oscuro: #121826;
+            --azul-primario: #1c64f2;
+            --primario-enfoque: #1a56db;
+            --texto-atenuado: #6b7280;
+        }
+
+        body {
+            background-color: var(--fondo-claro);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            color: #1f2937;
+        }
+
+        /* --- Barra de Navegación Unificada --- */
+        .navegacion-personalizada {
+            background-color: var(--nav-oscuro);
+            border-radius: 25px;
+            padding: 0.5rem 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .enlace-nav {
+            color: #9ca3af !important;
+            font-weight: 500;
+            margin: 0 5px;
+            padding: 8px 16px !important;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .enlace-nav:hover, .enlace-nav.nav-activo {
+            color: #ffffff !important;
+        }
+        .enlace-nav.nav-activo {
+            background-color: var(--primario-enfoque);
+        }
+        .barra-busqueda {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 6px 15px;
+            width: 250px;
+        }
+
+        /* --- Estilos de Tarjetas --- */
+        .tarjeta-personalizada {
+            background: white;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        /* Panel Izquierdo */
+        .foto-perfil {
+            width: 85px;
+            height: 85px;
+            background-color: #d1d5db;
+            border-radius: 50%;
+        }
+        .btn-grupo-lateral {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 12px;
+            color: #4b5563;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: 0.2s;
+        }
+        .btn-grupo-lateral:hover {
+            background-color: #f3f4f6;
+            color: #111827;
+        }
+        .btn-grupo-lateral.activo {
+            background-color: #eff6ff;
+            color: var(--azul-primario);
+            font-weight: 600;
+        }
+
+        /* Columna 1: Lista de Alumnos */
+        .entrada-busqueda-alumnos {
+            border-radius: 20px;
+            font-size: 0.85rem;
+            padding: 8px 15px 8px 35px;
+            border: 1px solid #e5e7eb;
+        }
+        .item-lista-alumno {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 1px solid transparent;
+        }
+        .item-lista-alumno:hover {
+            background-color: #f8fafc;
+        }
+        .item-lista-alumno.activo {
+            background-color: #ffffff;
+            border-color: #e5e7eb;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+        }
+        .mini-avatar-alumno {
+            width: 36px;
+            height: 36px;
+            background-color: #d1d5db;
+            border-radius: 50%;
+        }
+
+        /* Encabezado del Alumno Seleccionado */
+        .avatar-alumno-principal {
+            width: 65px;
+            height: 65px;
+            background-color: #9ca3af;
+            border-radius: 50%;
+        }
+        .bloque-progreso-horas {
+            background-color: #eff6ff;
+            border-radius: 16px;
+            padding: 14px 20px;
+            min-width: 220px;
+        }
+
+        /* Bitácora / Tabla de Reportes */
+        .tabla-reportes th {
+            font-size: 0.8rem;
+            color: var(--texto-atenuado);
+            font-weight: 600;
+            background-color: #e5e7eb;
+            padding: 12px;
+        }
+        .tabla-reportes th:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+        .tabla-reportes th:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+        
+        .tabla-reportes td {
+            padding: 16px 12px;
+            border-bottom: 1px solid #f3f4f6;
+            font-size: 0.85rem;
+            color: #111827;
+        }
+        .mini-logo-empresa {
+            width: 24px;
+            height: 24px;
+            background-color: #d1d5db;
+            border-radius: 4px;
+            display: inline-block;
+        }

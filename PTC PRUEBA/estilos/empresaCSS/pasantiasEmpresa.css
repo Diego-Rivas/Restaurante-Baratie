@@ -1,0 +1,55 @@
+        :root {
+            --nav-oscuro: #0f1626;
+            --azul-primario: #1d64f2;
+        }
+
+        body {
+            background-color: #eaebef;
+            color: #1f2937;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        /* Navbar personalizado */
+        .navbar-personalizada {
+            background-color: var(--nav-oscuro);
+        }
+        .nav-link {
+            color: #9ca3af !important;
+            transition: 0.2s;
+        }
+        .nav-link:hover, .nav-link.nav-activo { color: #ffffff !important; }
+        .nav-link.nav-activo {
+            background-color: #1f293d;
+        }
+
+        /* Interactividad de pestañas internas */
+        .btn-filtro-interno {
+            color: #6b7280;
+            transition: 0.2s;
+        }
+        .btn-filtro-interno.activo {
+            color: var(--azul-primario);
+        }
+        .btn-filtro-interno.activo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 12px;
+            right: 12px;
+            height: 3px;
+            background-color: var(--azul-primario);
+            border-radius: 3px 3px 0 0;
+        }
+
+        /* Botón Gestionar */
+        .btn-gestionar-bootstrap {
+            border: 2px solid var(--azul-primario) !important;
+            color: var(--azul-primario) !important;
+            min-width: 115px;
+        }
+        .btn-gestionar-bootstrap:hover {
+            background-color: #f0f5ff !important;
+        }
+        .item-eliminar {
+            color: #ef4444 !important;
+        }

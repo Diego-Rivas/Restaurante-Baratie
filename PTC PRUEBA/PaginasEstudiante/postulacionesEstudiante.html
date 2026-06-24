@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Postulaciones - ITR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/estudianteCSS/postulacionesEstudiante.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg barra-navegacion mx-4 mt-3 mb-4 p-2 px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold me-4" href="#">
+            <span class="text-warning">●</span> RICALDONE
+        </a>
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-1">
+                <li class="nav-item"><a class="nav-link enlace-menu px-3 py-2" href="./indexEstudiante.html"><i class="bi bi-briefcase me-1"></i> Inicio</a></li>
+                <li class="nav-item"><a class="nav-link enlace-menu px-3 py-2" href="./vacantes.html"><i class="bi bi-briefcase me-1"></i> Vacantes</a></li>
+                <li class="nav-item"><a class="nav-link enlace-menu activo px-3 py-2" href="./postulacionesEstudiante.html"><i class="bi bi-file-earmark-text me-1"></i> Postulaciones</a></li>
+                <li class="nav-item"><a class="nav-link enlace-menu px-3 py-2" href="./ofertasGuardadas.html"><i class="bi bi-bookmark me-1"></i> Postulaciones Guardadas</a></li>
+                <li class="nav-item"><a class="nav-link enlace-menu px-3 py-2" href="./asignacionesEstudiante.html"><i class="bi bi-check2-square me-1"></i> Asignaciones</a></li>
+                <li class="nav-item"><a class="nav-link enlace-menu px-3 py-2" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">3</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid px-4">
+    <div class="row">
+        
+        <div class="col-lg-2 col-md-4 mb-4">
+            
+            <div class="card tarjeta-blanca p-4 mb-3">
+                <div class="fila-estadistica mb-3" style="color: var(--pendiente);">
+                    <div><span class="punto-color" style="background: var(--pendiente);"></span> Pendiente</div>
+                    <span class="text-dark">4</span>
+                </div>
+                <div class="fila-estadistica mb-3" style="color: var(--revision);">
+                    <div><span class="punto-color" style="background: var(--revision);"></span> En revisión</div>
+                    <span class="text-dark">3</span>
+                </div>
+                <div class="fila-estadistica mb-3" style="color: var(--aceptado);">
+                    <div><span class="punto-color" style="background: var(--aceptado);"></span> Aceptado</div>
+                    <span class="text-dark">1</span>
+                </div>
+                <div class="fila-estadistica mb-0" style="color: var(--rechazado);">
+                    <div><span class="punto-color" style="background: var(--rechazado);"></span> Rechazado</div>
+                    <span class="text-dark">2</span>
+                </div>
+            </div>
+
+            <div class="card tarjeta-blanca p-4">
+                <h6 class="fw-bold mb-3">Estadísticas generales</h6>
+                
+                <div class="d-flex justify-content-center my-3">
+                    <div class="circulo-dona">
+                        <div class="centro-blanco-dona d-flex flex-column align-items-center justify-content-center">
+                            <h2 class="fw-bold mb-0 lh-1">12</h2>
+                            <span class="text-muted" style="font-size: 0.7rem;">Total</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <div class="fila-estadistica mb-3" style="color: var(--pendiente); font-size: 0.85rem;">
+                        <div><span class="punto-color" style="background: var(--pendiente); border-radius:2px; width: 12px; height: 6px;"></span> Pendiente</div>
+                    </div>
+                    <div class="fila-estadistica mb-3" style="color: var(--revision); font-size: 0.85rem;">
+                        <div><span class="punto-color" style="background: var(--revision); border-radius:2px; width: 12px; height: 6px;"></span> En revisión</div>
+                    </div>
+                    <div class="fila-estadistica mb-3" style="color: var(--aceptado); font-size: 0.85rem;">
+                        <div><span class="punto-color" style="background: var(--aceptado); border-radius:2px; width: 12px; height: 6px;"></span> Aceptado</div>
+                    </div>
+                    <div class="fila-estadistica mb-0" style="color: var(--rechazado); font-size: 0.85rem;">
+                        <div><span class="punto-color" style="background: var(--rechazado); border-radius:2px; width: 12px; height: 6px;"></span> Rechazado</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-7 col-md-8 mb-4">
+            <div class="card tarjeta-blanca p-4 h-100">
+                
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h4 class="fw-bold mb-1">Mis postulaciones</h4>
+                        <p class="text-muted small mb-0">Aquí puedes ver el estado de todas tus aplicaciones.</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="text-muted small me-2 text-nowrap">Ordenar por:</span>
+                        <select class="form-select form-select-sm border-0 bg-transparent fw-bold shadow-none" style="cursor: pointer;">
+                            <option selected>Más recientes</option>
+                            <option value="1">Antiguos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    
+                    <div class="col-md-3">
+                        <div class="fondo-columna">
+                            <div class="tarjeta-postulacion mb-3">
+                                <div class="titulo-columna" style="background-color: var(--pendiente-fondo); color: #854d0e; border-bottom: 1px solid white;">
+                                    <i class="bi bi-clock-history me-2 fs-5 text-warning"></i> Pendientes
+                                </div>
+                                <div class="p-3">
+                                    <div class="d-flex mb-2">
+                                        <div class="logo-empresa"></div>
+                                        <div>
+                                            <div class="nombre-puesto">Desarrollo Frontend</div>
+                                            <a href="#" class="nombre-empresa">Nombre empresa</a>
+                                        </div>
+                                    </div>
+                                    <div class="datos-extra d-flex flex-column gap-1 mt-2">
+                                        <span><i class="bi bi-geo-alt me-1"></i> San Salvador</span>
+                                        <span><i class="bi bi-clock me-1"></i> Hace 2 días</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="fondo-columna">
+                            <div class="tarjeta-postulacion mb-3">
+                                <div class="titulo-columna" style="background-color: var(--revision-fondo); color: #1e40af; border-bottom: 1px solid white;">
+                                    <i class="bi bi-eye-fill me-2 fs-5 text-primary"></i> En revisión
+                                </div>
+                                <div class="p-3">
+                                    <div class="d-flex mb-2">
+                                        <div class="logo-empresa"></div>
+                                        <div>
+                                            <div class="nombre-puesto">Desarrollo Frontend</div>
+                                            <a href="#" class="nombre-empresa">Nombre empresa</a>
+                                        </div>
+                                    </div>
+                                    <div class="datos-extra d-flex flex-column gap-1 mt-2">
+                                        <span><i class="bi bi-geo-alt me-1"></i> San Salvador</span>
+                                        <span><i class="bi bi-clock me-1"></i> Hace 2 días</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="fondo-columna">
+                            <div class="tarjeta-postulacion mb-3">
+                                <div class="titulo-columna" style="background-color: var(--aceptado-fondo); color: #065f46; border-bottom: 1px solid white;">
+                                    <i class="bi bi-check-circle-fill me-2 fs-5 text-success"></i> Aceptado
+                                </div>
+                                <div class="p-3">
+                                    <div class="d-flex mb-2">
+                                        <div class="logo-empresa"></div>
+                                        <div>
+                                            <div class="nombre-puesto">Desarrollo Frontend</div>
+                                            <a href="#" class="nombre-empresa">Nombre empresa</a>
+                                        </div>
+                                    </div>
+                                    <div class="datos-extra d-flex flex-column gap-1 mt-2">
+                                        <span><i class="bi bi-geo-alt me-1"></i> San Salvador</span>
+                                        <span><i class="bi bi-clock me-1"></i> Hace 2 días</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="fondo-columna">
+                            <div class="tarjeta-postulacion mb-3">
+                                <div class="titulo-columna" style="background-color: var(--rechazado-fondo); color: #991b1b; border-bottom: 1px solid white;">
+                                    <i class="bi bi-x-circle-fill me-2 fs-5 text-danger"></i> Rechazado
+                                </div>
+                                <div class="p-3">
+                                    <div class="d-flex mb-2">
+                                        <div class="logo-empresa"></div>
+                                        <div>
+                                            <div class="nombre-puesto">Desarrollo Frontend</div>
+                                            <a href="#" class="nombre-empresa">Nombre empresa</a>
+                                        </div>
+                                    </div>
+                                    <div class="datos-extra d-flex flex-column gap-1 mt-2">
+                                        <span><i class="bi bi-geo-alt me-1"></i> San Salvador</span>
+                                        <span><i class="bi bi-clock me-1"></i> Hace 2 días</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 mb-4">
+            
+            <div class="card tarjeta-blanca p-4 text-center mb-4">
+                <div class="foto-perfil mb-3 mx-auto d-flex align-items-center justify-content-center">
+                    <i class="bi bi-person-fill text-white" style="font-size: 3.5rem;"></i>
+                </div>
+                <h5 class="fw-bold mb-0">Usuario</h5>
+                <p class="text-muted small mb-0 fw-bold mt-1">Desarrollo de Software</p>
+                <p class="text-muted small mb-2">Segundo año</p>
+                <div class="mb-3">
+                    <span class="punto-activo-perfil"></span><span class="fw-bold" style="color: #10b981; font-size: 0.8rem;">Disponible para oportunidades</span>
+                </div>
+                <a href="./perfilEstudiante.html" class="btn btn-primary w-100 rounded-pill border-0 py-2 fw-bold" style="background-color: var(--azul-principal);"> Ver mi perfil</a>
+            </div>
+            
+            <div class="card tarjeta-blanca p-4">
+                <h6 class="fw-bold mb-4">Consejos para ti</h6>
+                
+                <div class="d-flex mb-3">
+                    <div class="circulo-icono d-flex align-items-center justify-content-center me-3" style="background-color: #e0e7ff; color: #4338ca;"><i class="bi bi-box-arrow-up-right"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Completa tu perfil al 100%</div>
+                        <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Tendrás más oportunidades de ser seleccionado.</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex mb-3">
+                    <div class="circulo-icono d-flex align-items-center justify-content-center me-3" style="background-color: #f3e8ff; color: #7e22ce;"><i class="bi bi-people-fill"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Destaca tus habilidades</div>
+                        <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Añade las habilidades más relevantes para tu área.</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex mb-0">
+                    <div class="circulo-icono d-flex align-items-center justify-content-center me-3" style="background-color: #dcfce7; color: #15803d;"><i class="bi bi-file-earmark-check-fill"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Postúlate constantemente</div>
+                        <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Entre más te postules, más oportunidades tendrás.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

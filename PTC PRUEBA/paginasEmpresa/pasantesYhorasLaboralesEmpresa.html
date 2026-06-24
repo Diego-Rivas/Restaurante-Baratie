@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Empresa - Pasantes y Horas Laborales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/empresaCSS/pasantesYhorasLaboralesEmpresa.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-personalizada mx-4 mt-3 mb-4 rounded-5 px-4 py-2 shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold me-4" href="#">
+                <span class="text-warning">●</span> RICALDONE
+            </a>
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+                <ul class="navbar-nav gap-1">
+                    <li class="nav-item"><a class="nav-link px-3 rounded-5 fw-medium" href="./indexEmpresa.html"><i class="bi bi-house-door me-1"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 rounded-5 fw-medium" href="./ofertasLaboralesEmpresa.html"><i class="bi bi-briefcase me-1"></i> Ofertas laborales</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 rounded-5 fw-medium" href="./pasantiasEmpresa.html"><i class="bi bi-file-earmark-person me-1"></i> Pasantías</a></li>
+                    <li class="nav-item"><a class="nav-link nav-activo px-3 rounded-5 fw-medium" href="#"><i class="bi bi-person-badge me-1"></i> Pasantes y horas</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 rounded-5 fw-medium" href="./notificacionesEmpresa.html">
+                            <i class="bi bi-bell me-1"></i> Notificaciones 
+                            <span class="badge bg-danger ms-1 rounded-pill" style="font-size: 0.7rem; padding: 3px 6px;">5</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-4 mb-5" style="font-size: 0.88rem;">
+        <div class="row g-4">
+            
+            <div class="col-xl-2 col-lg-3">
+                <div class="card border-0 rounded-4 p-4 text-center bg-white shadow-sm">
+                    <div class="rounded-circle bg-secondary-subtle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 75px; height: 75px;">
+                        <i class="bi bi-building text-white fs-2"></i>
+                    </div>
+                    <h5 class="fw-bold mb-0" style="font-size: 1.05rem;">Empresa</h5>
+                    <p class="text-muted small mb-3">TechSolutions S.A.</p>
+                    <a href="#" class="btn btn-primary w-100 rounded-pill py-2 fw-semibold border-0" style="background-color: var(--azul-primario); font-size: 0.85rem;">Ver mi perfil</a>
+                </div>
+            </div>
+
+            <div class="col-xl-10 col-lg-9">
+                <div class="mb-4">
+                    <h4 class="fw-bold mb-1">Pasantes y horas laborales</h4>
+                    <span class="text-muted">Gestiona tus pasantes y registra horas laborales</span>
+                </div>
+
+                <div class="row g-3 mb-4 text-start">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card border-0 rounded-4 p-3 bg-white shadow-sm d-flex flex-row align-items-center gap-3">
+                            <div class="rounded-3 d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="width: 48px; height: 48px; background: #e8f0fe; color: var(--azul-primario);"><i class="bi bi-backpack-fill"></i></div>
+                            <div><div class="fw-bold fs-4 lh-1">18</div><div class="text-muted small">Pasantes activos</div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card border-0 rounded-4 p-3 bg-white shadow-sm d-flex flex-row align-items-center gap-3">
+                            <div class="rounded-3 d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="width: 48px; height: 48px; background: #e6f7ed; color: #10b981;"><i class="bi bi-clock-history"></i></div>
+                            <div><div class="fw-bold fs-4 lh-1">2,450</div><div class="text-muted small">Horas acumuladas</div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card border-0 rounded-4 p-3 bg-white shadow-sm d-flex flex-row align-items-center gap-3">
+                            <div class="rounded-3 d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="width: 48px; height: 48px; background: #f3e8ff; color: #a855f7;"><i class="bi bi-calendar-check-fill"></i></div>
+                            <div><div class="fw-bold fs-4 lh-1">245</div><div class="text-muted small">Horas este mes</div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card border-0 rounded-4 p-3 bg-white shadow-sm d-flex flex-row align-items-center gap-3">
+                            <div class="rounded-3 d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="width: 48px; height: 48px; background: #fef3c7; color: #f59e0b;"><i class="bi bi-hourglass-split"></i></div>
+                            <div><div class="fw-bold fs-4 lh-1">6</div><div class="text-muted small">Por finalizar</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-xl-8">
+                        <div class="card border-0 rounded-4 shadow-sm bg-white overflow-hidden">
+                            <div class="d-flex justify-content-between align-items-center px-4 border-bottom">
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-filtro-pasante activo py-3 px-2 border-0 bg-transparent fw-bold">Todos</button>
+                                    <button class="btn btn-filtro-pasante py-3 px-2 border-0 bg-transparent fw-bold">Activos</button>
+                                    <button class="btn btn-filtro-pasante py-3 px-2 border-0 bg-transparent fw-bold">Finalizados</button>
+                                </div>
+                                <div class="position-relative">
+                                    <i class="bi bi-search position-absolute text-muted" style="left: 12px; top: 50%; transform: translateY(-50%);"></i>
+                                    <input type="text" class="form-control rounded-pill ps-5 bg-light border-0 small" style="width: 200px; font-size: 0.8rem;" placeholder="Buscar pasante...">
+                                </div>
+                            </div>
+
+                            <table class="table mb-0 tabla-pasantes">
+                                <thead class="bg-light">
+                                    <tr class="text-secondary small fw-bold">
+                                        <th class="border-0 px-4">Estudiante</th>
+                                        <th class="border-0">Horas totales</th>
+                                        <th class="border-0">Progreso</th>
+                                        <th class="border-0 text-center">Estado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="px-4">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="rounded-circle bg-secondary-subtle" style="width: 42px; height: 42px;"></div>
+                                                <div><div class="fw-bold text-dark">Juan Pérez</div><div class="text-muted small">jperez432@gmail.com</div></div>
+                                            </div>
+                                        </td>
+                                        <td class="fw-bold text-secondary">100 h</td>
+                                        <td style="width: 180px;">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="progress w-100" style="height: 6px; border-radius: 10px;">
+                                                    <div class="progress-bar bg-success" style="width: 85%;"></div>
+                                                </div>
+                                                <span class="fw-bold small text-muted">85%</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-center"><span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 fw-bold">Activo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="rounded-circle bg-secondary-subtle" style="width: 42px; height: 42px;"></div>
+                                                <div><div class="fw-bold text-dark">María Mendoza</div><div class="text-muted small">mmendoza.t@gmail.com</div></div>
+                                            </div>
+                                        </td>
+                                        <td class="fw-bold text-secondary">125 h</td>
+                                        <td style="width: 180px;">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="progress w-100" style="height: 6px; border-radius: 10px;">
+                                                    <div class="progress-bar bg-warning" style="width: 45%;"></div>
+                                                </div>
+                                                <span class="fw-bold small text-muted">45%</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-center"><span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 fw-bold">Activo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="rounded-circle bg-secondary-subtle" style="width: 42px; height: 42px;"></div>
+                                                <div><div class="fw-bold text-dark">Carlos Granados</div><div class="text-muted small">cgranados01@gmail.com</div></div>
+                                            </div>
+                                        </td>
+                                        <td class="fw-bold text-secondary">90 h</td>
+                                        <td style="width: 180px;">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="progress w-100" style="height: 6px; border-radius: 10px;">
+                                                    <div class="progress-bar bg-danger" style="width: 38%;"></div>
+                                                </div>
+                                                <span class="fw-bold small text-muted">38%</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-center"><span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 fw-bold">Activo</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="rounded-circle bg-secondary-subtle" style="width: 42px; height: 42px;"></div>
+                                                <div><div class="fw-bold text-dark">Ana Sofía Rivera</div><div class="text-muted small">arivera.work@gmail.com</div></div>
+                                            </div>
+                                        </td>
+                                        <td class="fw-bold text-secondary">150 h</td>
+                                        <td style="width: 180px;">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="progress w-100" style="height: 6px; border-radius: 10px;">
+                                                    <div class="progress-bar bg-success" style="width: 100%;"></div>
+                                                </div>
+                                                <span class="fw-bold small text-muted">100%</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-center"><span class="badge bg-secondary-subtle text-secondary rounded-pill px-3 py-2 fw-bold">Finalizado</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="rounded-circle bg-secondary-subtle" style="width: 42px; height: 42px;"></div>
+                                                <div><div class="fw-bold text-dark">Kevin Alvarado</div><div class="text-muted small">kalvarado99@gmail.com</div></div>
+                                            </div>
+                                        </td>
+                                        <td class="fw-bold text-secondary">60 h</td>
+                                        <td style="width: 180px;">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="progress w-100" style="height: 6px; border-radius: 10px;">
+                                                    <div class="progress-bar bg-danger" style="width: 20%;"></div>
+                                                </div>
+                                                <span class="fw-bold small text-muted">20%</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-center"><span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 fw-bold">Activo</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4">
+                        <div class="card border border-light-subtle rounded-4 p-4 bg-white shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center mb-4 text-start">
+                                <h6 class="fw-bold mb-0">Estudiante seleccionado</h6>
+                                <button type="button" class="btn-close small" aria-label="Close"></button>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3 mb-4 pb-3 border-bottom text-start">
+                                <div class="rounded-circle bg-secondary-subtle flex-shrink-0" style="width: 60px; height: 60px;"></div>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="fw-bold mb-0">Juan Pérez</h6>
+                                        <span class="text-success small fw-bold">● Activo</span>
+                                    </div>
+                                    <p class="text-muted mb-0 small">jperez432@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-4 text-start small">
+                                <div class="col-6 text-muted">Horas totales:<br><strong class="text-dark">100 h</strong></div>
+                                <div class="col-6 text-muted">Acumuladas:<br><strong class="text-dark">100 h</strong></div>
+                                <div class="col-12 mt-3">
+                                    <div class="d-flex justify-content-between mb-1"><span>Progreso</span><strong>85%</strong></div>
+                                    <div class="progress" style="height: 6px; border-radius: 10px;"><div class="progress-bar bg-success" style="width: 85%;"></div></div>
+                                </div>
+                            </div>
+
+                            <form class="text-start">
+                                <h6 class="fw-bold mb-3">Registrar horas</h6>
+                                <div class="row g-3 mb-3">
+                                    <div class="col-6">
+                                        <label class="text-muted small mb-1">Fecha</label>
+                                        <input type="text" class="input-registro-linea w-100 py-1" placeholder="21/06/2026">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="text-muted small mb-1">Horas</label>
+                                        <input type="number" class="input-registro-linea w-100 py-1 text-center" value="4">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="text-muted small mb-1">Descripción</label>
+                                    <textarea class="form-control bg-light border-0 small py-2 px-3" rows="3" style="resize: none;" placeholder="Actividades realizadas..."></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary w-100 py-2 fw-bold border-0" style="background-color: var(--azul-primario); border-radius: 10px;">Guardar horas</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

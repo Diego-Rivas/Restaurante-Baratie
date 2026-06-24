@@ -1,0 +1,84 @@
+        /* --- Variables Globales --- */
+        :root {
+            --fondo-claro: #e9e9e9;
+            --nav-oscuro: #121826;
+            --azul-primario: #1c64f2;
+        }
+
+        body {
+            background-color: var(--fondo-claro);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.88rem;
+            color: #1f2937;
+        }
+
+        /* --- Navbar Personalizada --- */
+        .navbar-personalizada {
+            background-color: var(--nav-oscuro);
+            border-radius: 25px;
+            padding: 0.6rem 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .nav-link {
+            color: #9ca3af !important;
+            font-weight: 500;
+            margin: 0 4px;
+            padding: 8px 18px !important;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .nav-link:hover { color: #ffffff !important; }
+        .nav-link.nav-activo {
+            background-color: #2e3748;
+            color: #ffffff !important;
+        }
+
+        /* --- Círculos de Pasos --- */
+        .circulo-paso {
+            width: 28px;
+            height: 28px;
+            background-color: var(--azul-primario);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* --- Inputs e Interfaces Estilo Línea --- */
+        .form-control-linea, .form-select-linea {
+            border: none;
+            border-bottom: 2px solid #cbd5e1;
+            border-radius: 0;
+            padding: 6px 0;
+            font-size: 0.9rem;
+            background-color: transparent;
+            color: #1f2937;
+            width: 100%;
+            transition: border-color 0.3s;
+        }
+        .form-select-linea {
+            padding-right: 24px;
+            color: #4b5563;
+        }
+        .form-control-linea:focus, .form-select-linea:focus {
+            outline: none;
+            border-bottom-color: var(--azul-primario);
+        }
+
+        /* --- Botones Inferiores Estilo Fijo --- */
+        .btn-inferior-publicar {
+            background-color: var(--azul-primario);
+            color: white;
+            font-weight: bold;
+            padding: 10px 32px;
+            border-radius: 10px;
+            border: none;
+        }
+        .btn-inferior-cancelar {
+            background-color: white;
+            color: var(--azul-primario);
+            font-weight: bold;
+            padding: 10px 32px;
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+        }
+
+        

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - ITR</title>
+    <!-- Bootstrap 5.3.0 & Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/estudianteCSS/indexEstudiante.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navegacion-personalizada mx-4 mt-3 mb-4 px-4 py-2">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold me-4" href="#">
+            <span class="text-warning">●</span> RICALDONE
+        </a>
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="enlace-nav nav-activo nav-link mx-1 px-3 py-2 text-decoration-none" href="./indexEstudiante.html"><i class="bi bi-house-door me-1"></i> Inicio</a></li>
+                <li class="nav-item"><a class="enlace-nav nav-link mx-1 px-3 py-2 text-decoration-none" href="./vacantes.html"><i class="bi bi-briefcase me-1"></i> Vacantes</a></li>
+                <li class="nav-item"><a class="enlace-nav nav-link mx-1 px-3 py-2 text-decoration-none" href="./postulacionesEstudiante.html"><i class="bi bi-file-earmark-text me-1"></i> Postulaciones</a></li>
+                <li class="nav-item"><a class="enlace-nav nav-link mx-1 px-3 py-2 text-decoration-none" href="./ofertasGuardadas.html"><i class="bi bi-bookmark me-1"></i> Postulaciones Guardadas</a></li>
+                <li class="nav-item"><a class="enlace-nav nav-link mx-1 px-3 py-2 text-decoration-none" href="./asignacionesEstudiante.html"><i class="bi bi-check2-square me-1"></i> Asignaciones</a></li>
+                <li class="nav-item"><a class="enlace-nav nav-link mx-1 px-3 py-2 text-decoration-none" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">3</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenedor Principal -->
+<div class="container-fluid px-4">
+    <div class="row">
+        
+        <!-- SECCIÓN IZQUIERDA Y CENTRAL (Métricas y Pasantías) -->
+        <main class="col-lg-9 col-xl-9 mb-4">
+            
+            <!-- Bloque de Bienvenida y Resumen Superior -->
+            <div class="card border-0 shadow-sm rounded-4 p-4 mb-4" style="background: white;">
+                <div class="row align-items-center g-3">
+                    <div class="col-md-5">
+                        <h4 class="fw-bold mb-1">¡Bienvenido de nuevo, Usuario!</h4>
+                        <p class="text-muted small mb-0">Aquí tienes un resumen de tu actividad y progreso en tu pasantía.</p>
+                    </div>
+                    
+                    <!-- Estado de la pasantía -->
+                    <div class="col-md-3">
+                        <div class="tarjeta-estado-superior rounded-4 p-3 d-flex align-items-center gap-3">
+                            <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px; background-color: #e8f5e9; color: #2e7d32;">
+                                <i class="bi bi-clipboard-check fs-4"></i>
+                            </div>
+                            <div>
+                                <div class="fw-bold text-dark" style="font-size: 0.95rem;">En progreso</div>
+                                <div class="text-muted" style="font-size: 0.75rem;">Estado de pasantías</div>
+                                <div class="text-muted mt-1" style="font-size: 0.7rem;">Desde 00/00/0000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horas registradas global -->
+                    <div class="col-md-4">
+                        <div class="tarjeta-estado-superior rounded-4 p-3">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px; background-color: #e8eaf6; color: #3f51b5;">
+                                    <i class="bi bi-clock-history fs-4"></i>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-baseline gap-1">
+                                        <span class="fs-4 fw-bold">86</span>
+                                        <span class="text-muted small">Horas registradas</span>
+                                    </div>
+                                    <div class="text-muted" style="font-size: 0.75rem;">de 120 horas registradas</div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="progreso-barra-personalizada flex-grow-1">
+                                    <div class="progreso-relleno" style="width: 72%;"></div>
+                                </div>
+                                <span class="fw-bold small" style="font-size: 0.75rem;">72%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Mi Pasantía Actual -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100 d-flex flex-column justify-content-between" style="background: white;">
+                        <div>
+                            <h5 class="fw-bold mb-4">Mi pasantía actual</h5>
+                            
+                            <div class="row align-items-start g-3 pb-4 border-bottom border-light-subtle">
+                                <div class="col-auto">
+                                    <div class="bg-body-secondary rounded-3" style="width: 75px; height: 75px;"></div>
+                                </div>
+                                <div class="col">
+                                    <h6 class="fw-bold mb-1">TechSolutions C.A.</h6>
+                                    <p class="text-secondary small mb-3">Desarrollo Frontend</p>
+                                    <span class="text-muted small"><i class="bi bi-geo-alt me-1"></i> San Salvador, Metrocentro</span>
+                                </div>
+                                <div class="col-12 col-sm-auto border-start border-light-subtle ps-sm-3 mt-3 mt-sm-0">
+                                    <div class="text-muted small" style="font-size: 0.75rem;">Fecha de inicio</div>
+                                    <div class="fw-medium small mb-2">-- de enero de 2027</div>
+                                    <div class="text-muted small" style="font-size: 0.75rem;">Supervisor</div>
+                                    <div class="fw-medium small">Esteban Gomez</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sección inferior de la tarjeta: Progreso de horas de la pasantía -->
+                        <div class="mt-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-bold" style="font-size: 0.9rem;">Progreso de horas</span>
+                                <span class="text-muted small"><strong class="text-dark">30</strong> /60 horas</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="progreso-barra-personalizada flex-grow-1">
+                                    <div class="progreso-relleno" style="width: 50%;"></div>
+                                </div>
+                                <span class="fw-bold small">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horas Registradas (Este Mes) -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100" style="background: white;">
+                        <h5 class="fw-bold mb-3">Horas registradas (este mes)</h5>
+                        
+                        <!-- Simulación del Gráfico de la imagen mediante SVG -->
+                        <div class="contenedor-grafico-lineal mb-3">
+                            <svg viewBox="0 0 500 180" class="w-100 h-100">
+                                <!-- Líneas de guía horizontales -->
+                                <line x1="40" y1="20" x2="480" y2="20" stroke="#f3f4f6" stroke-width="1" />
+                                <line x1="40" y1="60" x2="480" y2="60" stroke="#f3f4f6" stroke-width="1" />
+                                <line x1="40" y1="100" x2="480" y2="100" stroke="#f3f4f6" stroke-width="1" />
+                                <line x1="40" y1="140" x2="480" y2="140" stroke="#f3f4f6" stroke-width="1" />
+                                
+                                <!-- Textos del eje Y -->
+                                <text x="15" y="24" fill="#9ca3af" font-size="11">40</text>
+                                <text x="15" y="64" fill="#9ca3af" font-size="11">30</text>
+                                <text x="15" y="104" fill="#9ca3af" font-size="11">20</text>
+                                <text x="15" y="144" fill="#9ca3af" font-size="11">10</text>
+                                <text x="20" y="175" fill="#9ca3af" font-size="11">0</text>
+                                
+                                <!-- Área degradada debajo de la curva -->
+                                <defs>
+                                    <linearGradient id="gradienteGrafico" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.2"/>
+                                        <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M 50 160 Q 110 130 150 125 T 260 90 T 350 110 T 460 35 L 460 160 Z" fill="url(#gradienteGrafico)" />
+                                
+                                <!-- Línea del gráfico -->
+                                <path d="M 50 160 Q 110 130 150 125 T 260 90 T 350 110 T 460 35" fill="none" stroke="#4f46e5" stroke-width="3" />
+                                
+                                <!-- Puntos de los nodos -->
+                                <circle cx="50" cy="160" r="4" fill="#4f46e5" />
+                                <circle cx="150" cy="125" r="4" fill="#4f46e5" />
+                                <circle cx="260" cy="90" r="4" fill="#4f46e5" />
+                                <circle cx="350" cy="110" r="4" fill="#4f46e5" />
+                                <circle cx="460" cy="35" r="4" fill="#4f46e5" />
+
+                                <!-- Tooltip flotante simulado (22 horas) -->
+                                <rect x="225" y="45" width="68" height="24" rx="6" fill="#1e1b4b" />
+                                <text x="259" y="61" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">22 horas</text>
+                                
+                                <!-- Textos del eje X -->
+                                <text x="50" y="175" fill="#9ca3af" font-size="10" text-anchor="middle">1 May</text>
+                                <text x="150" y="175" fill="#9ca3af" font-size="10" text-anchor="middle">8 May</text>
+                                <text x="260" y="175" fill="#9ca3af" font-size="10" text-anchor="middle">15 May</text>
+                                <text x="350" y="175" fill="#9ca3af" font-size="10" text-anchor="middle">22 May</text>
+                                <text x="460" y="175" fill="#9ca3af" font-size="10" text-anchor="middle">29 May</text>
+                            </svg>
+                        </div>
+
+                        <!-- Total de horas acumuladas abajo -->
+                        <div class="d-flex align-items-center gap-3 pt-2">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; background-color: #f3e8ff; color: #6b21a8;">
+                                <i class="bi bi-clock fs-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-muted small" style="font-size: 0.8rem;">Total de horas</div>
+                                <div class="fw-bold text-dark"><span class="fs-4">86</span> horas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- SECCIÓN DERECCHA (Perfil del Estudiante y Consejos) -->
+        <aside class="col-lg-3 col-xl-3 mb-4">
+            <!-- Perfil Resumen -->
+            <div class="card border-0 shadow-sm rounded-4 p-4 text-center mb-4" style="background: white;">
+                <div class="bg-secondary rounded-circle mb-3 d-flex align-items-center justify-content-center mx-auto" style="width: 80px; height: 80px;">
+                    <i class="bi bi-person-fill text-white" style="font-size: 3.5rem;"></i>
+                </div>
+                <h5 class="fw-bold mb-0">Usuario</h5>
+                <p class="text-muted small mb-0 fw-bold mt-1">Desarrollo de Software</p>
+                <p class="text-muted small mb-2">Segundo año</p>
+                <div class="mb-3 d-flex align-items-center justify-content-center gap-1">
+                    <span class="rounded-circle d-inline-block" style="width: 8px; height: 8px; background-color: #10b981;"></span>
+                    <span class="fw-bold" style="color: #10b981; font-size: 0.8rem;">Disponible para oportunidades</span>
+                </div>
+                <a href="./perfilEstudiante.html" class="btn btn-primary w-100 rounded-pill text-decoration-none border-0 p-2 fw-bold" style="background-color: var(--azul-primario);">Ver mi perfil</a>
+            </div>
+
+            <!-- Consejos para ti -->
+            <div class="card border-0 shadow-sm rounded-4 p-4" style="background: white;">
+                <h6 class="fw-bold mb-4">Consejos para ti</h6>
+                
+                <div class="d-flex align-items-start gap-3 mb-3">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 35px; height: 35px; background-color: #dcfce7; color: #15803d;"><i class="bi bi-graph-up-arrow"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Completa tu perfil al 100%</div>
+                        <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Tendrás más oportunidades de ser contratado.</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-start gap-3 mb-3">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 35px; height: 35px; background-color: #f3e8ff; color: #7e22ce;"><i class="bi bi-puzzle"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Destaca tus habilidades</div>
+                        <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Añade las habilidades más relevantes para tu área</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-start gap-3">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 35px; height: 35px; background-color: #fef3c7; color: #d97706;"><i class="bi bi-file-earmark-check"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Postúlate constantemente</div>
+                        <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Entre más te postules, más oportunidades tendrás.</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

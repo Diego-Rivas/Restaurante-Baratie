@@ -1,0 +1,196 @@
+/* --- Variables Globales --- */
+        :root {
+            --fondo-gris: #eaebef;
+            --nav-oscuro: #0f1626;
+            --azul-primario: #1d64f2;
+            --radio-tarjeta: 16px;
+        }
+
+        body {
+            background-color: var(--fondo-gris);
+            font-family: system-ui, -apple-system, sans-serif;
+            color: #1f2937;
+            font-size: 0.9rem;
+        }
+
+        /* --- Navbar Redondeado --- */
+        .navbar-personalizada {
+            background-color: var(--nav-oscuro);
+            border-radius: 30px;
+            padding: 0.7rem 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            color: #9ca3af !important;
+            font-weight: 500;
+            margin: 0 5px;
+            padding: 8px 16px !important;
+            border-radius: 20px;
+            transition: 0.2s;
+        }
+        .nav-link:hover { color: #ffffff !important; }
+        .nav-link.nav-activo {
+            background-color: #1f293d;
+            color: #ffffff !important;
+        }
+
+        /* --- Panel Lateral Izquierdo --- */
+        .tarjeta-perfil {
+            background: white;
+            border-radius: var(--radio-tarjeta);
+            border: none;
+        }
+        .avatar-placeholder {
+            width: 75px;
+            height: 75px;
+            background-color: #cbd5e1;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        /* --- Panel de Creación --- */
+        .tarjeta-panel-creacion {
+            background: white;
+            border-radius: var(--radio-tarjeta);
+            border: none;
+            padding: 30px;
+        }
+        .boton-retorno {
+            border: none;
+            background: none;
+            color: #4b5563;
+            font-size: 1.2rem;
+        }
+        .paso-formulario {
+            margin-bottom: 35px;
+        }
+        .numero-paso-circulo {
+            width: 28px;
+            height: 28px;
+            background-color: var(--azul-primario);
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .paso-formulario-titulo {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        /* --- Inputs en Línea --- */
+        .input-formulario-linea, .input-formulario-select {
+            border: none;
+            border-bottom: 2px solid #cbd5e1;
+            border-radius: 0;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            width: 100%;
+            color: #1f2937;
+            background-color: transparent;
+        }
+        .input-formulario-select {
+            padding-right: 30px;
+            color: #4b5563;
+        }
+        .input-formulario-linea:focus, .input-formulario-select:focus {
+            outline: none;
+            border-bottom-color: var(--azul-primario);
+        }
+        .form-label-personalizado {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 6px;
+            font-size: 0.85rem;
+        }
+
+        /* --- Tags de Competencias --- */
+        .contenedor-tags {
+            border-bottom: 2px solid #cbd5e1;
+            padding: 8px 0;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .tag-requisito {
+            background-color: #f3f4f6;
+            color: #4b5563;
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid #e5e7eb;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* --- Vista Previa --- */
+        .tarjeta-vista-previa {
+            background: white;
+            border-radius: var(--radio-tarjeta);
+            border: 1px solid #e5e7eb;
+            padding: 24px;
+        }
+        .badge-preview-estado {
+            background-color: #ecfdf5;
+            color: #10b981;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+        .meta-tag-preview {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.72rem;
+            color: #6b7280;
+            background-color: #f8fafc;
+            padding: 3px 8px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* --- Consejos --- */
+        .tarjeta-consejos {
+            background-color: #f0f5ff;
+            border-radius: var(--radio-tarjeta);
+            padding: 24px;
+        }
+        .consejo-item {
+            display: flex;
+            align-items: start;
+            gap: 12px;
+            font-size: 0.85rem;
+            color: #374151;
+            margin-bottom: 14px;
+        }
+        .consejo-item:last-child { margin-bottom: 0; }
+
+        /* --- Barra de Acciones Inferior --- */
+        .barra-inferior-botones {
+            padding: 20px 40px;
+            background-color: #eaebef;
+        }
+        .btn-cancelar {
+            background: white;
+            color: #4b5563;
+            font-weight: 700;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            padding: 12px 40px;
+        }
+        .btn-publicar {
+            background-color: var(--azul-primario);
+            color: white;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 40px;
+        }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Talento Técnico ITR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/inicioSesion.css">
+</head>
+<body>
+
+    <div class="container-fluid contenedor-login">
+        <div class="row h-100">
+            
+            <div class="col-12 col-md-5 col-lg-4 lado-izquierdo d-flex justify-content-center align-items-center">
+                
+                <img src="https://via.placeholder.com/80" alt="Logo Salesianos Ricaldone" class="logo-superior-izquierdo">
+
+                <div class="contenedor-formulario px-4">
+                    <div class="text-center mb-4">
+                        <h1 class="titulo-formulario">Bienvenido al<br>Portal de Talento Técnico ITR</h1>
+                        <p class="subtitulo-formulario">Ingresa tus credenciales para acceder al sistema</p>
+                    </div>
+
+                    <form id="formularioLogin">
+                        <div class="mb-3">
+                            <label for="entradaEmail" class="form-label">Gmail Personal</label>
+                            <input type="email" class="form-control entrada-personalizada" id="entradaEmail" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="entradaPassword" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control entrada-personalizada" id="entradaPassword" required>
+                        </div>
+                        <button type="submit" class="btn boton-personalizado w-100">Iniciar Sesión</button>
+                    </form>
+
+                    <div class="text-center texto-pie">
+                        Desarrollado por el departamento de Desarrollo de Software<br>
+                        del <a href="#">Instituto Técnico Ricaldone</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-7 col-lg-8 lado-derecho d-none d-md-block">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.getElementById('formularioLogin').addEventListener('submit', function(event) {
+            // Prevenir que la página se recargue al enviar
+            event.preventDefault();
+
+            // Obtener los valores de los campos
+            const email = document.getElementById('entradaEmail').value;
+            const password = document.getElementById('entradaPassword').value;
+
+            // Validación simple
+            if(email && password) {
+                console.log("Intentando iniciar sesión con:", email);
+                // lógica real de conexión con el backend
+                alert("¡Simulación de inicio de sesión exitosa para " + email + "!");
+            }
+        });
+    </script>
+</body>
+</html>

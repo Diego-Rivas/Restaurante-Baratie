@@ -1,0 +1,66 @@
+/* --- Variables Globales --- */
+        :root {
+            --fondo-claro: #f4f5f7;
+            --nav-oscuro: #121826;
+            --azul-primario: #1c64f2;
+            --primario-enfoque: #1a56db;
+        }
+
+        body {
+            background-color: var(--fondo-claro);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* --- Barra de Navegación --- */
+        .navegacion-personalizada {
+            background-color: var(--nav-oscuro);
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .enlace-nav {
+            color: #9ca3af !important;
+            transition: 0.3s;
+        }
+        .enlace-nav:hover { 
+            color: #ffffff !important; 
+        }
+        .enlace-nav.nav-activo {
+            background-color: var(--primario-enfoque);
+            color: #ffffff !important;
+        }
+
+        /* --- Tarjetas --- */
+        .tarjeta-personalizada {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        /* Panel Izquierdo: Botones de Grupos */
+        .btn-grupo-lateral {
+            color: #4b5563;
+            transition: 0.2s;
+        }
+        .btn-grupo-lateral:hover {
+            background-color: #f3f4f6;
+            color: #111827;
+        }
+        .btn-grupo-lateral.activo {
+            background-color: #eff6ff;
+            color: var(--azul-primario);
+        }
+
+        /* Columna: Vacantes */
+        .item-vacante {
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .item-vacante:hover {
+            background-color: #f8fafc;
+        }
+        .item-vacante.seleccionada {
+            border-color: var(--azul-primario);
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(28, 100, 242, 0.08);
+        }

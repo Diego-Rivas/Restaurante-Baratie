@@ -1,0 +1,90 @@
+        /* --- Variables Globales indispensables --- */
+        :root {
+            --fondo-claro: #e9e9e9;
+            --nav-oscuro: #121826;
+            --azul-primario: #1c64f2;
+            --radio-borde-tarjeta: 20px;
+        }
+
+        body {
+            background-color: var(--fondo-claro);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1f2937;
+        }
+
+        /* --- Navbar Personalizada --- */
+        .navbar-personalizada {
+            background-color: var(--nav-oscuro);
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .nav-link {
+            color: #9ca3af !important;
+            transition: 0.3s;
+        }
+        .nav-link:hover { color: #ffffff !important; }
+        .nav-link.nav-activo {
+            background-color: #2e3748;
+            color: #ffffff !important;
+        }
+
+        /* --- Estilos de Tarjetas --- */
+        .tarjeta-personalizada {
+            border-radius: var(--radio-borde-tarjeta);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        /* --- Panel Lateral Izquierdo --- */
+        .imagen-perfil {
+            width: 85px;
+            height: 85px;
+            background-color: #cbd5e1;
+        }
+        .item-accion-rapida {
+            color: #1f2937;
+            border-bottom: 1px solid #f1f5f9;
+            transition: 0.2s;
+        }
+        .item-accion-rapida:last-child { border-bottom: none; }
+        .item-accion-rapida:hover {
+            background-color: #f8fafc;
+            color: var(--azul-primario) !important;
+        }
+        .icono-accion-contenedor {
+            width: 36px;
+            height: 36px;
+        }
+
+        /* --- Tarjetas de Métricas --- */
+        .tarjeta-metrica {
+            border-radius: var(--radio-borde-tarjeta);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+        .icono-metrica-caja {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+        }
+
+        /* --- Bloques Inferiores --- */
+        .avatar-lista {
+            width: 46px;
+            height: 46px;
+            background-color: #cbd5e1;
+        }
+
+        /* Badges de Estados */
+        .badge-nueva { background-color: #e8f5e9; color: #4caf50; }
+        .badge-revision { background-color: #fff3e0; color: #ffb74d; }
+        .badge-aceptada { background-color: #e3f2fd; color: #42a5f5; }
+        .badge-rechazada { background-color: #eceff1; color: #90a4ae; }
+        .badge-activo { background-color: #e8f5e9; color: #4caf50; }
+
+        .btn-ver-perfil {
+            border: 1px solid #cbd5e1;
+            color: #1c64f2;
+            transition: 0.2s;
+        }
+        .btn-ver-perfil:hover {
+            background-color: #f3f4f6;
+        }

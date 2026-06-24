@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignaciones - ITR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/estudianteCSS/asignacionesEstudiante.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg barra-personalizada mx-4 mt-3 mb-4 py-2 px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold me-4" href="#">
+            <span class="text-warning">●</span> RICALDONE
+        </a>
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link py-2 px-3" href="./indexEstudiante.html"><i class="bi bi-briefcase me-1"></i> Inicio</a></li>
+                <li class="nav-item"><a class="nav-link py-2 px-3" href="./vacantes.html"><i class="bi bi-briefcase me-1"></i> Vacantes</a></li>
+                <li class="nav-item"><a class="nav-link py-2 px-3" href="./postulacionesEstudiante.html"><i class="bi bi-file-earmark-text me-1"></i> Postulaciones</a></li>
+                <li class="nav-item"><a class="nav-link py-2 px-3" href="./ofertasGuardadas.html"><i class="bi bi-bookmark me-1"></i> Postulaciones Guardadas</a></li>
+                <li class="nav-item"><a class="nav-link enlace-activo py-2 px-3" href="./asignacionesEstudiante.html"><i class="bi bi-check2-square me-1"></i> Asignaciones</a></li>
+                <li class="nav-item"><a class="nav-link py-2 px-3" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">3</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid px-4">
+    <div class="row">
+        
+        <div class="col-lg-3 col-xl-2 mb-4">
+            <div class="card tarjeta-personalizada p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold mb-0">Filtros</h5>
+                    <i class="bi bi-sliders text-muted"></i>
+                </div>
+
+                <div class="fw-bold mt-3 mb-2" style="font-size: 0.95rem;">Buscar asignación</div>
+                <div class="contenedor-entrada-busqueda">
+                    <input type="text" class="form-control rounded-2 border-secondary-subtle py-2 px-3 w-100" placeholder="Ej: Proyecto, Guía 2" style="font-size: 0.85rem;">
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <div class="fw-bold mt-4 mb-2" style="font-size: 0.95rem;">Estado de entrega</div>
+                <div class="form-check casilla-personalizada mb-2">
+                    <input class="form-check-input" type="checkbox" id="estado1" checked style="width:1.2em; height:1.2em;">
+                    <label class="form-check-label text-secondary ms-1" for="estado1" style="font-size: 0.85rem;">Pendientes</label>
+                </div>
+                <div class="form-check casilla-personalizada mb-2">
+                    <input class="form-check-input" type="checkbox" id="estado2" style="width:1.2em; height:1.2em;">
+                    <label class="form-check-label text-secondary ms-1" for="estado2" style="font-size: 0.85rem;">Entregadas</label>
+                </div>
+                <div class="form-check casilla-personalizada mb-2">
+                    <input class="form-check-input" type="checkbox" id="estado3" style="width:1.2em; height:1.2em;">
+                    <label class="form-check-label text-secondary ms-1" for="estado3" style="font-size: 0.85rem;">Calificadas</label>
+                </div>
+
+                <div class="fw-bold mt-4 mb-2" style="font-size: 0.95rem;">Módulo / Área</div>
+                <div class="form-check casilla-personalizada mb-2">
+                    <input class="form-check-input" type="checkbox" id="mod1" checked style="width:1.2em; height:1.2em;">
+                    <label class="form-check-label text-secondary ms-1" for="mod1" style="font-size: 0.85rem;">Desarrollo de Software</label>
+                </div>
+                <div class="form-check casilla-personalizada mb-2">
+                    <input class="form-check-input" type="checkbox" id="mod2" style="width:1.2em; height:1.2em;">
+                    <label class="form-check-label text-secondary ms-1" for="mod2" style="font-size: 0.85rem;">Base de Datos</label>
+                </div>
+                <div class="form-check casilla-personalizada mb-2">
+                    <input class="form-check-input" type="checkbox" id="mod3" style="width:1.2em; height:1.2em;">
+                    <label class="form-check-label text-secondary ms-1" for="mod3" style="font-size: 0.85rem;">Diseño Web UI/UX</label>
+                </div>
+                <div class="form-check casilla-personalizada mb-2">
+                    <input class="form-check-input" type="checkbox" id="mod4" style="width:1.2em; height:1.2em;">
+                    <label class="form-check-label text-secondary ms-1" for="mod4" style="font-size: 0.85rem;">Habilidades Blandas</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-xl-7 mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <h4 class="fw-bold mb-0">Mis Asignaciones</h4>
+                    <p class="text-muted small mb-0">3 asignaciones pendientes prioritarias</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <span class="text-muted small me-2 text-nowrap">Ordenar por:</span>
+                    <select class="form-select form-select-sm border-0 bg-transparent fw-bold shadow-none text-dark" style="cursor: pointer;">
+                        <option selected>Fecha de entrega próxima</option>
+                        <option value="1">Más recientes publicadas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card tarjeta-personalizada p-4">
+                
+                <div class="tarjeta-asignacion p-4 mb-3 d-flex align-items-center position-relative">
+                    <div class="caja-icono-asignacion d-flex align-items-center justify-content-center me-4">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h5 class="fw-bold mb-1" style="font-size: 1.15rem;">Proyecto Final: Desarrollo de API RESTful</h5>
+                        <a href="#" class="nombre-modulo small">Módulo de Desarrollo de Software</a>
+                        <div class="d-flex align-items-center gap-3 text-muted mt-2 small">
+                            <span><i class="bi bi-calendar-event me-1"></i> Vence: 22 de Junio</span>
+                            <span><i class="bi bi-exclamation-circle text-danger me-1"></i> Ponderación: 35%</span>
+                            <span class="badge bg-warning text-dark rounded-pill">Pendiente</span>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-end gap-2">
+                            <button class="btn boton-lineas-primario-personalizado px-4 py-1">Ver Guía</button>
+                            <button class="btn boton-primario-personalizado px-4 py-1">Subir Entrega</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-asignacion p-4 mb-3 d-flex align-items-center position-relative">
+                    <div class="caja-icono-asignacion d-flex align-items-center justify-content-center me-4" style="background-color: #f0fdf4; color: #16a34a;">
+                        <i class="bi bi-database"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h5 class="fw-bold mb-1" style="font-size: 1.15rem;">Caso Práctico: Optimización de Consultas SQL</h5>
+                        <a href="#" class="nombre-modulo small">Módulo de Bases de Datos</a>
+                        <div class="d-flex align-items-center gap-3 text-muted mt-2 small">
+                            <span><i class="bi bi-calendar-event me-1"></i> Vence: 25 de Junio</span>
+                            <span><i class="bi bi-exclamation-circle me-1"></i> Ponderación: 15%</span>
+                            <span class="badge bg-info text-white rounded-pill">En Revisión</span>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-end gap-2">
+                            <button class="btn boton-lineas-primario-personalizado px-4 py-1">Detalles</button>
+                            <button class="btn boton-primario-personalizado px-4 py-1" disabled>Editar Entrega</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-asignacion p-4 mb-3 d-flex align-items-center position-relative">
+                    <div class="caja-icono-asignacion d-flex align-items-center justify-content-center me-4" style="background-color: #faf5ff; color: #7e22ce;">
+                        <i class="bi bi-palette"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h5 class="fw-bold mb-1" style="font-size: 1.15rem;">Maquetación Interfaz de Usuario (Figma)</h5>
+                        <a href="#" class="nombre-modulo small">Diseño Web UI/UX</a>
+                        <div class="d-flex align-items-center gap-3 text-muted mt-2 small">
+                            <span><i class="bi bi-check-circle-fill text-success me-1"></i> Calificado</span>
+                            <span><i class="bi bi-star-fill text-warning me-1"></i> Nota obtenida: 9.5</span>
+                            <span class="badge bg-success text-white rounded-pill">Completado</span>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-end gap-2">
+                            <button class="btn boton-lineas-primario-personalizado px-4 py-1">Ver Feedback</button>
+                            <button class="btn boton-primario-personalizado px-4 py-1">Ver Rúbrica</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xl-3 mb-4">
+            <div class="card tarjeta-personalizada p-4 text-center mb-4">
+                <div class="imagen-perfil mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-person-fill text-white" style="font-size: 3.5rem;"></i>
+                </div>
+                <h5 class="fw-bold mb-0">Usuario</h5>
+                <p class="text-muted small mb-0 fw-bold mt-1">Desarrollo de Software</p>
+                <p class="text-muted small mb-2">Segundo año</p>
+                <div class="mb-3 d-flex align-items-center justify-content-center">
+                    <span class="rounded-circle d-inline-block me-2" style="width: 8px; height: 8px; background-color: #10b981;"></span>
+                    <span class="fw-bold" style="color: #10b981; font-size: 0.8rem;">Disponible para oportunidades</span>
+                </div>
+                <a href="./perfilEstudiante.html" class="btn btn-primary w-100 rounded-pill py-2 border-0 fw-semibold" style="background-color: var(--azul-primario); font-size: 0.85rem;"> Ver mi perfil</a>
+            </div>
+
+            <div class="card tarjeta-personalizada p-4">
+                <h6 class="fw-bold mb-4">Recordatorios de Aula</h6>
+                
+                <div class="d-flex mb-3">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 35px; height: 35px; background-color: #fee2e2; color: #dc2626;"><i class="bi bi-clock-history"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Proyecto de API vence pronto</div>
+                        <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Te quedan solo 2 días para completar la subida de los archivos.</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex mb-2">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 35px; height: 35px; background-color: #fef3c7; color: #d97706;"><i class="bi bi-journal-check"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Revisión de Portafolio</div>
+                        <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Recuerda tener actualizados tus repositorios de GitHub vinculados.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

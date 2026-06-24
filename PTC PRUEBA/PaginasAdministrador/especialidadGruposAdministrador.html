@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrador - Especialidades y Grupos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/administradorCSS/especialidadGruposAdmin.css">
+
+</head>
+
+<body class="small text-secondary-emphasis">
+    <nav class="navbar navbar-expand-lg navbar-personalizada mx-4 mt-3 mb-4 rounded-5 px-4 py-2 shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold me-4" href="#">
+                <span class="text-warning">●</span> RICALDONE
+            </a>
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavegacion">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavegacion">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link px-3 py-2 mx-1 rounded-pill fw-medium" href="./indexadministrador.html"><i class="bi bi-house-door me-1"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-2 mx-1 rounded-pill fw-medium" href="./docentesAdministrador.html"><i class="bi bi-person-badge me-1"></i> Docentes</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 py-2 mx-1 rounded-pill fw-medium" href="./usuariosAdministrador.html"><i class="bi bi-people me-1"></i> Usuarios</a></li>
+                    <li class="nav-item"><a class="nav-link nav-activo px-3 py-2 mx-1 rounded-pill fw-medium" href="./especialidadGruposAdministrador.html"><i class="bi bi-tags me-1"></i> Especialidades & grupos</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <div class="bg-white rounded-pill px-3 py-1 d-flex align-items-center" style="width: 250px;">
+                    <input type="text" class="form-control border-0 bg-transparent p-0 small" placeholder="Busca estudiantes..." style="box-shadow: none;">
+                    <i class="bi bi-search text-muted ms-2"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-4">
+        <div class="row">
+            
+            <aside class="col-xl-2 col-lg-3 mb-4">
+                <div class="card border-0 rounded-4 shadow-sm p-4 text-center bg-white">
+                    <div class="mb-3 d-flex align-items-center justify-content-center bg-secondary-subtle rounded-circle mx-auto" style="width: 80px; height: 80px;">
+                        <i class="bi bi-person-fill text-white fs-1"></i>
+                    </div>
+                    <h5 class="fw-bold mb-0 text-dark">Admin</h5>
+                    <p class="text-muted small mb-3">Lic. Carlos Mendoza</p>
+                    <a href="#" class="btn btn-primary w-100 rounded-pill py-2 fw-semibold border-0" style="background-color: var(--azul-primario);">Ver mi perfil</a>
+                </div>
+            </aside>
+
+            <main class="col-xl-10 col-lg-9">
+                <div class="row g-3">
+                    
+                    <div class="col-md-6 mb-2">
+                        <div class="card border-0 rounded-4 shadow-sm p-4 h-100 d-flex flex-column justify-content-between bg-white">
+                            <div>
+                                <h5 class="fw-bold mb-0 punto-azul text-dark">Nueva especialidad</h5>
+                                <span class="text-muted small d-block mb-4">Agregar una especialidad al sistema</span>
+                                
+                                <div class="mb-4">
+                                    <label class="fw-bold text-dark d-block mb-2" style="font-size: 0.75rem;">Nombre de la especialidad</label>
+                                    <input type="text" class="form-control rounded-3 p-3 border-light-subtle small shadow-sm" placeholder="Ej: Energias renovables" style="font-size: 0.85rem;">
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-end gap-2">
+                                <button class="btn btn-primary rounded-3 fw-semibold border-0 px-4 py-2 small" style="background-color: #2563eb; font-size: 0.8rem; line-height: 1.2;">Agregar<br>especialidad</button>
+                                <button class="btn btn-secondary rounded-3 fw-semibold border-0 px-4 py-2 small text-dark" style="background-color: #cbd5e1; font-size: 0.85rem;">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-2">
+                        <div class="card border-0 rounded-4 shadow-sm p-4 h-100 d-flex flex-column justify-content-between bg-white">
+                            <div>
+                                <h5 class="fw-bold mb-0 punto-verde text-dark">Nuevo grupo</h5>
+                                <span class="text-muted small d-block mb-4">crear un grupo para el periodo</span>
+                                
+                                <div class="row g-2 mb-4">
+                                    <div class="col-6">
+                                        <label class="fw-bold text-dark d-block mb-2" style="font-size: 0.75rem;">Numero de grupo</label>
+                                        <input type="text" class="form-control rounded-3 p-3 border-light-subtle small shadow-sm" placeholder="Ej: 1" style="font-size: 0.85rem;">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="fw-bold text-dark d-block mb-2" style="font-size: 0.75rem;">Periodo (año)</label>
+                                        <input type="text" class="form-control rounded-3 p-3 border-light-subtle small shadow-sm" placeholder="Ej: 2026" style="font-size: 0.85rem;">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-end gap-2">
+                                <button class="btn btn-primary rounded-3 fw-semibold border-0 px-4 py-2 small" style="background-color: #2563eb; font-size: 0.8rem; line-height: 1.2;">Agregar<br>grupo</button>
+                                <button class="btn btn-secondary rounded-3 fw-semibold border-0 px-4 py-2 small text-dark" style="background-color: #cbd5e1; font-size: 0.85rem;">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-0 rounded-4 shadow-sm p-4 bg-white">
+                            <h5 class="fw-bold mb-4 punto-azul text-dark">Especialidades registradas</h5>
+                            
+                            <div class="d-flex flex-column">
+                                <div class="item-especialidad d-flex justify-content-between align-items-center py-2 fw-semibold text-dark" style="font-size: 0.85rem;">
+                                    <span>Desarrollo de software</span>
+                                    <div class="d-flex gap-1">
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash3-fill"></i></button>
+                                    </div>
+                                </div>
+                                <div class="item-especialidad d-flex justify-content-between align-items-center py-2 fw-semibold text-dark" style="font-size: 0.85rem;">
+                                    <span>Contaduria</span>
+                                    <div class="d-flex gap-1">
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash3-fill"></i></button>
+                                    </div>
+                                </div>
+                                <div class="item-especialidad d-flex justify-content-between align-items-center py-2 fw-semibold text-dark" style="font-size: 0.85rem;">
+                                    <span>Automotriz</span>
+                                    <div class="d-flex gap-1">
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash3-fill"></i></button>
+                                    </div>
+                                </div>
+                                <div class="item-especialidad d-flex justify-content-between align-items-center py-2 fw-semibold text-dark" style="font-size: 0.85rem;">
+                                    <span>Arquitectura</span>
+                                    <div class="d-flex gap-1">
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash3-fill"></i></button>
+                                    </div>
+                                </div>
+                                <div class="item-especialidad d-flex justify-content-between align-items-center py-2 fw-semibold text-dark" style="font-size: 0.85rem;">
+                                    <span>Diseño grafico</span>
+                                    <div class="d-flex gap-1">
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash3-fill"></i></button>
+                                    </div>
+                                </div>
+                                <div class="item-especialidad d-flex justify-content-between align-items-center py-2 fw-semibold text-dark" style="font-size: 0.85rem;">
+                                    <span>Electronica</span>
+                                    <div class="d-flex gap-1">
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash3-fill"></i></button>
+                                    </div>
+                                </div>
+                                <div class="item-especialidad d-flex justify-content-between align-items-center py-2 fw-semibold text-dark" style="font-size: 0.85rem;">
+                                    <span>Electromecanica</span>
+                                    <div class="d-flex gap-1">
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash3-fill"></i></button>
+                                    </div>
+                                </div>
+                                <div class="item-especialidad d-flex justify-content-between align-items-center py-2 fw-semibold text-dark" style="font-size: 0.85rem;">
+                                    <span>Energias renovables</span>
+                                    <div class="d-flex gap-1">
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-pencil-square"></i></button>
+                                        <button class="btn-accion-mini border-0 rounded d-inline-flex align-items-center justify-content-center"><i class="bi bi-trash3-fill"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-0 rounded-4 shadow-sm p-4 bg-white">
+                            <h5 class="fw-bold mb-4 punto-verde text-dark">Grupos registrados</h5>
+                            
+                            <div class="border rounded-3 p-3 mb-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="fw-bold text-dark" style="font-size:0.9rem;">Grupo 1</span>
+                                    <span class="badge-periodo fw-semibold rounded-1 px-2 py-1" style="font-size: 0.75rem;">2026</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex gap-2">
+                                        <div class="caja-estudiantes-badge text-white rounded-3 p-2 text-center fw-semibold" style="font-size: 0.75rem; line-height: 1.3;">22<br>Estudiantes</div>
+                                        <div class="caja-estudiantes-badge text-white rounded-3 p-2 text-center fw-semibold" style="font-size: 0.75rem; line-height: 1.3;">2<br>Estudiantes</div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-1">
+                                        <button class="btn text-white rounded-2 fw-semibold py-1 px-3 small" style="background-color: #f87171; width: 100px; font-size: 0.75rem;">Eliminar</button>
+                                        <button class="btn text-white rounded-2 fw-semibold py-1 px-3 small" style="background-color: #60a5fa; width: 100px; font-size: 0.75rem;">Editar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border rounded-3 p-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="fw-bold text-dark" style="font-size:0.9rem;">Grupo 2</span>
+                                    <span class="badge-periodo fw-semibold rounded-1 px-2 py-1" style="font-size: 0.75rem;">2026</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex gap-2">
+                                        <div class="caja-estudiantes-badge text-white rounded-3 p-2 text-center fw-semibold" style="font-size: 0.75rem; line-height: 1.3;">22<br>Estudiantes</div>
+                                        <div class="caja-estudiantes-badge text-white rounded-3 p-2 text-center fw-semibold" style="font-size: 0.75rem; line-height: 1.3;">2<br>Estudiantes</div>
+                                    </div>
+                                    <div class="d-flex flex-column gap-1">
+                                        <button class="btn text-white rounded-2 fw-semibold py-1 px-3 small" style="background-color: #f87171; width: 100px; font-size: 0.75rem;">Eliminar</button>
+                                        <button class="btn text-white rounded-2 fw-semibold py-1 px-3 small" style="background-color: #60a5fa; width: 100px; font-size: 0.75rem;">Editar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bundle.min.js"></script>
+</body>
+</html>

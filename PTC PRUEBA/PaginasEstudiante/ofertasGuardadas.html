@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulaciones Guardadas - ITR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/estudianteCSS/ofertasGuardadasEstudiante.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-personalizado mx-4 mt-3 mb-4 py-2 px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold me-4" href="#">
+            <span class="text-warning">●</span> RICALDONE
+        </a>
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./indexEstudiante.html"><i class="bi bi-briefcase me-1"></i> Inicio</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./vacantes.html"><i class="bi bi-briefcase me-1"></i> Vacantes</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./postulacionesEstudiante.html"><i class="bi bi-file-earmark-text me-1"></i> Postulaciones</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav nav-activo py-2 px-3" href="./ofertasGuardadas.html"><i class="bi bi-bookmark-fill me-1"></i> Postulaciones Guardadas</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./asignacionesEstudiante.html"><i class="bi bi-check2-square me-1"></i> Asignaciones</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav py-2 px-3" href="./noti.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">3</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid px-4">
+    <div class="row">
+        
+        <div class="col-lg-3 col-xl-2 mb-4">
+            <div class="card tarjeta-personalizada p-4">
+                <h6 class="fw-bold mb-4">Consejos para ti</h6>
+                
+                <div class="d-flex mb-4">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 40px; height: 40px; background-color: #dcfce7; color: #15803d; font-size: 1.1rem;"><i class="bi bi-graph-up-arrow"></i></div>
+                    <div>
+                        <a href="#" class="fw-bold text-decoration-underline d-block" style="font-size: 0.85rem; color: #1d4ed8;">Completa tu perfil al 100%</a>
+                        <div class="text-muted" style="font-size: 0.75rem; line-height: 1.3;">Tendrás más oportunidades de ser contratado.</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex mb-4">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 40px; height: 40px; background-color: #f3e8ff; color: #7e22ce; font-size: 1.1rem;"><i class="bi bi-puzzle"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Destaca tus habilidades</div>
+                        <div class="text-muted" style="font-size: 0.75rem; line-height: 1.3;">Añade las habilidades más relevantes para tu área</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex mb-0">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style="width: 40px; height: 40px; background-color: #fef3c7; color: #d97706; font-size: 1.1rem;"><i class="bi bi-file-earmark-check"></i></div>
+                    <div>
+                        <div class="fw-bold" style="font-size: 0.85rem;">Postúlate constantemente</div>
+                        <div class="text-muted" style="font-size: 0.75rem; line-height: 1.3;">Entre más te postules, más oportunidades tendrás.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-xl-7 mb-4">
+            
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                    <h4 class="fw-bold mb-1">Mis vacantes guardadas</h4>
+                    <p class="text-muted small mb-0">Aquí puedes ver todas las vacantes que has guardado para revisar más tarde.</p>
+                </div>
+                <div class="d-flex align-items-center bg-white px-3 py-2 rounded-3 shadow-sm border border-light">
+                    <span class="text-muted small me-2 text-nowrap">Ordenar por:</span>
+                    <select class="form-select form-select-sm border-0 fw-bold shadow-none p-0" style="background-color: transparent; width: auto; cursor: pointer;" aria-label="Ordenar vacantes">
+                        <option selected>Más recientes</option>
+                        <option value="1">Más antiguas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card tarjeta-personalizada p-4">
+                
+                <div class="tarjeta-vacante p-4 mb-4 position-relative">
+                    <div class="position-absolute text-muted small" style="top: 20px; right: 24px; font-size: 0.78rem;">Guardado hace 2 días</div>
+                    <div class="d-flex">
+                        <div class="logo-empresa me-4"></div>
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold mb-1" style="font-size: 1.25rem; color: #111827;">Desarrollo Frontend</h5>
+                            <a href="#" class="nombre-empresa">Nombre de la empresa</a>
+                            <div class="d-flex align-items-center gap-3 text-muted mt-2" style="font-size: 0.82rem;">
+                                <span><i class="bi bi-geo-alt me-1"></i> San Salvador</span>
+                                <span><i class="bi bi-briefcase me-1"></i> Tiempo completo</span>
+                                <span><i class="bi bi-clock me-1"></i> Publicado hace 2 días</span>
+                            </div>
+                            <div class="mt-4 d-flex justify-content-end align-items-center gap-2">
+                                <button class="btn btn-lineas-primario-personalizado px-4 py-1">Ver detalles</button>
+                                <button class="btn btn-primario-personalizado px-4 py-1">Postularme</button>
+                                <button class="btn-marcador-activo d-flex align-items-center justify-content-center"><i class="bi bi-bookmark-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-vacante p-4 mb-4 position-relative">
+                    <div class="position-absolute text-muted small" style="top: 20px; right: 24px; font-size: 0.78rem;">Guardado hace 5 días</div>
+                    <div class="d-flex">
+                        <div class="logo-empresa me-4"></div>
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold mb-1" style="font-size: 1.25rem; color: #111827;">Diseñador Gráfico</h5>
+                            <a href="#" class="nombre-empresa">Nombre de la empresa</a>
+                            <div class="d-flex align-items-center gap-3 text-muted mt-2" style="font-size: 0.82rem;">
+                                <span><i class="bi bi-geo-alt me-1"></i> San Salvador</span>
+                                <span><i class="bi bi-briefcase me-1"></i> Tiempo completo</span>
+                                <span><i class="bi bi-clock me-1"></i> Publicado hace 2 días</span>
+                            </div>
+                            <div class="mt-4 d-flex justify-content-end align-items-center gap-2">
+                                <button class="btn btn-lineas-primario-personalizado px-4 py-1">Ver detalles</button>
+                                <button class="btn btn-primario-personalizado px-4 py-1">Postularme</button>
+                                <button class="btn-marcador-activo d-flex align-items-center justify-content-center"><i class="bi bi-bookmark-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-vacante p-4 mb-0 position-relative">
+                    <div class="position-absolute text-muted small" style="top: 20px; right: 24px; font-size: 0.78rem;">Guardado hace 1 semana</div>
+                    <div class="d-flex">
+                        <div class="logo-empresa me-4"></div>
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold mb-1" style="font-size: 1.25rem; color: #111827;">Desarrollador Backend PHP</h5>
+                            <a href="#" class="nombre-empresa">Nombre de la empresa</a>
+                            <div class="d-flex align-items-center gap-3 text-muted mt-2" style="font-size: 0.82rem;">
+                                <span><i class="bi bi-geo-alt me-1"></i> San Salvador</span>
+                                <span><i class="bi bi-briefcase me-1"></i> Tiempo completo</span>
+                                <span><i class="bi bi-clock me-1"></i> Publicado hace 2 días</span>
+                            </div>
+                            <div class="mt-4 d-flex justify-content-end align-items-center gap-2">
+                                <button class="btn btn-lineas-primario-personalizado px-4 py-1">Ver detalles</button>
+                                <button class="btn btn-primario-personalizado px-4 py-1">Postularme</button>
+                                <button class="btn-marcador-activo d-flex align-items-center justify-content-center"><i class="bi bi-bookmark-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-xl-3 mb-4">
+            <div class="card tarjeta-personalizada p-4 text-center mb-4">
+                <div class="imagen-perfil mb-3 mx-auto rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-person-fill text-white" style="font-size: 3.5rem;"></i>
+                </div>
+                <h5 class="fw-bold mb-0">Usuario</h5>
+                <p class="text-muted small mb-0 fw-bold mt-1">Desarrollo de Software</p>
+                <p class="text-muted small mb-2">Segundo año</p>
+                <div class="mb-3 d-flex align-items-center justify-content-center">
+                    <span class="rounded-circle d-inline-block me-2" style="width: 8px; height: 8px; background-color: #10b981;"></span>
+                    <span class="fw-bold" style="color: #10b981; font-size: 0.8rem;">Disponible para oportunidades</span>
+                </div>
+                <a href="./perfilEstudiante.html" class="btn btn-primary w-100 rounded-pill py-2 border-0 fw-semibold" style="background-color: var(--azul-primario); font-size: 0.85rem;"> Ver mi perfil</a>
+            </div>
+
+            <div class="card tarjeta-personalizada p-4">
+                <h6 class="fw-bold mb-4">Mis estadísticas</h6>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <div class="rounded-circle text-white d-flex align-items-center justify-content-center me-3" style="width: 38px; height: 38px; background-color: #1c64f2; font-size: 1rem;"><i class="bi bi-briefcase"></i></div>
+                    <div>
+                        <div class="fw-bold lh-1 fs-5">12</div>
+                        <div class="text-muted small">Postulaciones</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <div class="rounded-circle text-white d-flex align-items-center justify-content-center me-3" style="width: 38px; height: 38px; background-color: #10b981; font-size: 1rem;"><i class="bi bi-folder"></i></div>
+                    <div>
+                        <div class="fw-bold lh-1 fs-5">3</div>
+                        <div class="text-muted small">Proyectos</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-0">
+                    <div class="rounded-circle text-white d-flex align-items-center justify-content-center me-3" style="width: 38px; height: 38px; background-color: #7e22ce; font-size: 1rem;"><i class="bi bi-code-slash"></i></div>
+                    <div>
+                        <div class="fw-bold lh-1 fs-5">5</div>
+                        <div class="text-muted small">Habilidades</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

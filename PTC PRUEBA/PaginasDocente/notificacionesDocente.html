@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaciones Docente - ITR</title>
+    <!-- CDN de Bootstrap 5 y Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/docenteCSS/notificacionesDocente.css">
+    
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL (DOCENTE) -->
+    <nav class="navbar navbar-expand-lg navbar-personalizada mx-4 mt-3 mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold me-4" href="#">
+                <span class="text-warning">●</span> RICALDONE
+            </a>
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavegacion">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavegacion">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./indexDocente.html"><i class="bi bi-people me-1"></i> Estudiantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pasantiasDocente.html"><i class="bi bi-folder-check me-1"></i> Pasantías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./reportesDocente.html"><i class="bi bi-file-earmark-bar-graph me-1"></i> Reportes</a></li>
+                    <li class="nav-item"><a class="nav-link nav-activo" href="./notificacionesDocente.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">5</span></a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <div class="barra-busqueda d-flex align-items-center">
+                    <input type="text" class="form-control border-0 bg-transparent p-0" placeholder="Busca estudiantes..." style="box-shadow: none; font-size:0.85rem;">
+                    <i class="bi bi-search text-muted ms-2"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENEDOR DE LA DISTRIBUCIÓN (GRID) -->
+    <div class="container-fluid px-4">
+        <div class="row">
+            
+            <!-- COLUMNA IZQUIERDA: Herramientas de Filtrado Docente y Preferencias -->
+            <aside class="col-lg-3 col-xl-2 mb-4">
+                <!-- Bloque de Filtros adaptados para el Docente -->
+                <div class="card tarjeta-personalizada p-3">
+                    <div class="d-flex justify-content-between align-items-center mb-3 px-2">
+                        <h6 class="fw-bold mb-0">Filtros</h6>
+                        <i class="bi bi-sliders text-muted"></i>
+                    </div>
+                    <a href="#" class="item-filtro activo">
+                        <div><i class="bi bi-inbox icono-filtro text-primary"></i> Todas</div>
+                        <span class="fw-bold">15</span>
+                    </a>
+                    <a href="#" class="item-filtro">
+                        <div><i class="bi bi-chat-left icono-filtro"></i> Sin leer</div>
+                        <span class="fw-bold">5</span>
+                    </a>
+                    <a href="#" class="item-filtro">
+                        <div><i class="bi bi-file-earmark-check icono-filtro text-success"></i> Reportes</div>
+                        <span class="fw-bold">6</span>
+                    </a>
+                    <a href="#" class="item-filtro">
+                        <div><i class="bi bi-person-plus icono-filtro" style="color: #8b5cf6;"></i> Asignaciones</div>
+                        <span class="fw-bold">3</span>
+                    </a>
+                    <a href="#" class="item-filtro">
+                        <div><i class="bi bi-exclamation-triangle icono-filtro text-warning"></i> Alertas</div>
+                        <span class="fw-bold">1</span>
+                    </a>
+                </div>
+
+                <!-- Bloque de Ajustes/Preferencias rápidas -->
+                <div class="card tarjeta-personalizada p-3">
+                    <h6 class="fw-bold mb-3 px-2">Preferencias</h6>
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-3 px-2">
+                        <div>
+                            <div class="fw-bold" style="font-size: 0.85rem;"><i class="bi bi-bell me-2"></i> Notificaciones push</div>
+                            <div class="text-muted" style="font-size: 0.75rem; margin-left: 24px;">Activadas</div>
+                        </div>
+                        <div class="form-check form-switch m-0 p-0">
+                            <input class="form-check-input ms-0" type="checkbox" checked>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-3 px-2">
+                        <div>
+                            <div class="fw-bold" style="font-size: 0.85rem;"><i class="bi bi-envelope me-2"></i> Notificaciones por Email</div>
+                            <div class="text-muted" style="font-size: 0.75rem; margin-left: 24px;">Activadas</div>
+                        </div>
+                        <div class="form-check form-switch m-0 p-0">
+                            <input class="form-check-input ms-0" type="checkbox" checked>
+                        </div>
+                    </div>
+
+                    <a href="#" class="d-flex justify-content-between align-items-center px-2 text-decoration-none mt-2" data-bs-toggle="modal" data-bs-target="#modalSilenciar">
+                        <div>
+                            <div class="fw-bold text-dark" style="font-size: 0.85rem;"><i class="bi bi-bell-slash me-2"></i> Silenciar notificaciones</div>
+                            <div class="text-muted" style="font-size: 0.75rem; margin-left: 24px;">Desactivado</div>
+                        </div>
+                        <i class="bi bi-chevron-right text-muted" style="font-size: 0.8rem;"></i>
+                    </a>
+                </div>
+            </aside>
+
+            <!-- COLUMNA CENTRAL: Panel Principal de Notificaciones (Docente) -->
+            <main class="col-lg-6 col-xl-7 mb-4">
+                <div class="card tarjeta-personalizada p-4">
+                    <div class="d-flex justify-content-between align-items-end mb-4">
+                        <div>
+                            <h4 class="fw-bold mb-1">Bandeja de Entrada</h4>
+                            <p class="text-muted small mb-0">Seguimiento de las actividades y entregas de tus alumnos.</p>
+                        </div>
+                        <a href="#" class="text-decoration-none fw-bold" style="color: var(--azul-primario); font-size: 0.85rem;">Marcar todas como leídas</a>
+                    </div>
+
+                    <!-- Ítem 1: Reporte mensual entregado por estudiante (Estado: Sin leer) -->
+                    <div class="tarjeta-notificacion">
+                        <div class="circulo-icono fondo-icono-verde"><i class="bi bi-file-earmark-check-fill"></i></div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-bold">Reporte Mensual entregado</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="text-muted small me-2">Hace 10 min</span>
+                                    <span class="punto-sin-leer"></span>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-0">El estudiante <strong>Marcos Antonio Dubón</strong> ha subido su reporte de horas del mes de mayo para revisión.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ítem 2: Asignación de alumno automática (Estado: Sin leer) -->
+                    <div class="tarjeta-notificacion">
+                        <div class="circulo-icono fondo-icono-azul"><i class="bi bi-person-fill-plus"></i></div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-bold">Nuevo estudiante asignado</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="text-muted small me-2">Hace 2 horas</span>
+                                    <span class="punto-sin-leer"></span>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-0">Se te ha asignado como tutor de pasantías a la alumna <strong>Gabriela María Flores</strong> de 2° Software B.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ítem 3: Alerta de Convenio / Prórroga (Estado: Sin leer) -->
+                    <div class="tarjeta-notificacion">
+                        <div class="circulo-icono fondo-icono-rojo"><i class="bi bi-exclamation-triangle-fill"></i></div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-bold">Alerta: Convenio próximo a vencer</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="text-muted small me-2">Hace 5 horas</span>
+                                    <span class="punto-sin-leer"></span>
+                                </div>
+                            </div>
+                            <p class="text-muted small mb-0">La pasantía de <strong>Rodrigo Alfaro</strong> en <em>AppStudio SV</em> termina en 5 días y no registra reportes finales.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ítem 4: Solicitud de Empresa (Estado: Leído) -->
+                    <div class="tarjeta-notificacion">
+                        <div class="circulo-icono fondo-icono-purpura"><i class="bi bi-building-fill-check"></i></div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-bold">Empresa aprobó propuesta de plaza</span>
+                                <span class="text-muted small">Hace 1 día</span>
+                            </div>
+                            <p class="text-muted small mb-0">La empresa <em>Tech Solutions</em> aprobó el proyecto de desarrollo presentado para el grupo de alumnos asignado.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ítem 5: Recordatorio de Reunión (Estado: Leído) -->
+                    <div class="tarjeta-notificacion">
+                        <div class="circulo-icono fondo-icono-naranja"><i class="bi bi-calendar-event-fill"></i></div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="fw-bold">Reunión de seguimiento de pasantías</span>
+                                <span class="text-muted small">Hace 2 días</span>
+                            </div>
+                            <p class="text-muted small mb-0">Recordatorio de la sesión de coordinación con la jefatura de talleres programada para el viernes.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            <!-- COLUMNA DERECHA: Perfil Resumen de Docente -->
+            <aside class="col-lg-3 col-xl-3 mb-4">
+                <div class="card tarjeta-personalizada p-4 text-center mb-4">
+                    <div class="imagen-perfil mb-3 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-person-fill text-white" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-0">Usuario</h5>
+                    <p class="text-muted small mb-1">Lic. Carlos Mendoza</p>
+                    <p class="text-muted small mb-0 fw-bold">Docente</p>
+                    <p class="text-muted small mb-3">Desarrollo de Software</p>
+                    <a href="#" class="btn btn-primary w-100 rounded-pill" style="background-color: var(--azul-primario); border:none; padding: 8px; font-weight: 600;"> Ver mi perfil</a>
+                </div>
+
+                <!-- Bloque de Mis Grupos Asignados -->
+                <div class="card tarjeta-personalizada p-3">
+                    <h6 class="fw-bold mb-3 px-2">Mis grupos asignados</h6>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="btn-grupo-lateral activo">
+                            <i class="bi bi-people-fill fs-5"></i> 2 Software A - Grupo 1
+                        </a>
+                        <a href="#" class="btn-grupo-lateral">
+                            <i class="bi bi-people-fill fs-5"></i> 2 Software A - Grupo 2
+                        </a>
+                        <a href="#" class="btn-grupo-lateral">
+                            <i class="bi bi-people-fill fs-5"></i> 2 Software B - Grupo 1
+                        </a>
+                        <a href="#" class="btn-grupo-lateral">
+                            <i class="bi bi-people-fill fs-5"></i> 2 Software B - Grupo 2
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- ==========================================
+         VENTANA MODAL: SILENCIAR NOTIFICACIONES
+         ========================================== -->
+    <div class="modal fade" id="modalSilenciar" tabindex="-1" aria-labelledby="etiquetaModalSilenciar" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <div class="modal-body">
+                    <div class="d-flex mb-4 align-items-start">
+                        <i class="bi bi-bell-slash text-dark me-3" style="font-size: 2rem; line-height: 1;"></i>
+                        <div>
+                            <h4 class="fw-bold mb-1" id="etiquetaModalSilenciar">Silenciar notificaciones</h4>
+                            <p class="text-muted mb-0" style="font-size: 0.9rem;">Elige qué tipos de avisos docentes deseas pausar.</p>
+                        </div>
+                    </div>
+
+                    <h6 class="fw-bold mb-3">¿Qué deseas silenciar?</h6>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <div class="tarjeta-opcion-modal d-flex align-items-center" style="border-color: var(--azul-primario); background-color: #f8fafc;">
+                                <div class="caja-icono-modal" style="background-color: #e1effe; color: var(--azul-primario);">
+                                    <i class="bi bi-bell-fill"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 0.9rem;">Todas las alertas</div>
+                                    <div class="text-muted" style="font-size: 0.75rem; line-height: 1.2;">Pausa de manera temporal toda la actividad académica de la plataforma.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tarjeta-opcion-modal d-flex align-items-center">
+                                <div class="caja-icono-modal" style="background-color: #def7ec; color: #046c4e;">
+                                    <i class="bi bi-file-earmark-check-fill"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 0.9rem;">Entregas de Reportes</div>
+                                    <div class="text-muted" style="font-size: 0.75rem; line-height: 1.2;">Silencia los avisos cuando tus alumnos suban documentos mensuales.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tarjeta-opcion-modal d-flex align-items-center">
+                                <div class="caja-icono-modal" style="background-color: #fde8e8; color: #c81e1e;">
+                                    <i class="bi bi-exclamation-triangle-fill"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 0.9rem;">Alertas de Convenios</div>
+                                    <div class="text-muted" style="font-size: 0.75rem; line-height: 1.2;">Silencia los recordatorios automáticos de plazos y prórrogas.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-2 gap-2">
+                        <button type="button" class="btn btn-light px-4 py-2 fw-bold" data-bs-dismiss="modal" style="border: 1px solid #e5e7eb; border-radius: 20px;">Cancelar</button>
+                        <button type="button" class="btn btn-primary px-4 py-2 fw-bold" style="background-color: var(--azul-primario); border: none; border-radius: 20px;"><i class="bi bi-bell-slash me-2"></i>Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script oficial de Bootstrap para funcionalidades de Modals y Navbar colapsable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

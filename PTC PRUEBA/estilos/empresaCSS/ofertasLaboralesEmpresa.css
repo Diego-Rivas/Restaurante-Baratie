@@ -1,0 +1,48 @@
+/* --- CSS Estrictamente Necesario (Identidad y estados específicos) --- */
+        :root {
+            --nav-oscuro: #121826;
+            --azul-primario: #1c64f2;
+        }
+
+        body {
+            background-color: #e9e9e9;
+            color: #1f2937;
+        }
+
+        /* Estilos de navegación que Bootstrap no cubre por defecto */
+        .navbar-personalizada {
+            background-color: var(--nav-oscuro);
+        }
+        .nav-link {
+            color: #9ca3af !important;
+            transition: 0.3s;
+        }
+        .nav-link:hover, .nav-link.nav-activo { 
+            color: #ffffff !important; 
+        }
+        .nav-link.nav-activo {
+            background-color: #2e3748;
+        }
+
+        /* Enlaces de acciones rápidas e interactividad de filtros */
+        .item-accion-rapida {
+            color: #1f2937;
+            text-decoration: none;
+            transition: 0.2s;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .item-accion-rapida:hover {
+            background-color: #f8fafc;
+            color: var(--azul-primario);
+        }
+        .nav-link-filtro {
+            color: #6b7280;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            transition: 0.2s;
+        }
+        .nav-link-filtro:hover { color: #111827; }
+        .nav-link-filtro.activo {
+            color: var(--azul-primario);
+            border-bottom-color: var(--azul-primario);
+        }

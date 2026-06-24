@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Docente - ITR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/docenteCSS/indexDocente.css">
+    
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navegacion-personalizada mx-4 mt-3 mb-4 px-4 py-2">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold me-4" href="#">
+            <span class="text-warning">●</span> RICALDONE
+        </a>
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link enlace-nav nav-activo px-3 py-2 mx-1 fw-medium" href="./indexDocente.html"><i class="bi bi-people me-1"></i> Estudiantes</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav px-3 py-2 mx-1 fw-medium" href="./pasantiasDocente.html"><i class="bi bi-folder-check me-1"></i> Pasantías</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav px-3 py-2 mx-1 fw-medium" href="./reportesDocente.html"><i class="bi bi-file-earmark-bar-graph me-1"></i> Reportes</a></li>
+                <li class="nav-item"><a class="nav-link enlace-nav px-3 py-2 mx-1 fw-medium" href="./notificacionesDocente.html"><i class="bi bi-bell me-1"></i> Notificaciones <span class="badge bg-primary rounded-pill ms-1">3</span></a></li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-block">
+            <div class="barra-busqueda d-flex align-items-center bg-white px-3 py-1">
+                <input type="text" class="form-control border-0 bg-transparent p-0" placeholder="Busca estudiantes..." style="box-shadow: none; font-size:0.85rem;">
+                <i class="bi bi-search text-muted ms-2"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid px-4">
+    <div class="row">
+        
+        <aside class="col-lg-3 col-xl-2 mb-4">
+            <div class="card border-0 shadow-sm p-4 text-center mb-4 rounded-4 bg-white">
+                <div class="foto-perfil mb-3 d-flex align-items-center justify-content-center mx-auto rounded-circle">
+                    <i class="bi bi-person-fill text-white" style="font-size: 3.5rem;"></i>
+                </div>
+                <h5 class="fw-bold mb-0">Usuario</h5>
+                <p class="text-muted small mb-1">Lic. Carlos Mendoza</p>
+                <p class="text-muted small mb-0 fw-bold">Docente</p>
+                <p class="text-muted small mb-3">Desarrollo de Software</p>
+                <button class="btn btn-primary w-100 rounded-pill border-0 p-2 fw-semibold" style="background-color: var(--azul-primario); font-size: 0.85rem;">Ver mi perfil</button>
+            </div>
+
+            <div class="card border-0 shadow-sm p-3 rounded-4 bg-white">
+                <h6 class="fw-bold px-2 mb-3">Mis grupos asignados</h6>
+                <div class="d-flex flex-column gap-1">
+                    <a href="#" class="btn btn-grupo-lateral activo d-flex align-items-center gap-2 px-3 py-2 rounded-3 text-decoration-none fw-semibold">
+                        <i class="bi bi-people-fill fs-5"></i> 2 Software A - Grupo 1
+                    </a>
+                    <a href="#" class="btn btn-grupo-lateral d-flex align-items-center gap-2 px-3 py-2 rounded-3 text-decoration-none fw-medium">
+                        <i class="bi bi-people-fill fs-5"></i> 2 Software A - Grupo 2
+                    </a>
+                    <a href="#" class="btn btn-grupo-lateral d-flex align-items-center gap-2 px-3 py-2 rounded-3 text-decoration-none fw-medium">
+                        <i class="bi bi-people-fill fs-5"></i> 2 Software B - Grupo 1
+                    </a>
+                    <a href="#" class="btn btn-grupo-lateral d-flex align-items-center gap-2 px-3 py-2 rounded-3 text-decoration-none fw-medium">
+                        <i class="bi bi-people-fill fs-5"></i> 2 Software B - Grupo 2
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="col-lg-6 col-xl-7 mb-4">
+            <h5 class="fw-bold mb-3">Acciones rápidas</h5>
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <button class="btn tarjeta-accion-rapida bg-white border border-secondary-subtle p-3 d-flex align-items-center gap-3 w-100 text-start">
+                        <div class="icono-accion d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="background-color: #eff6ff; color: #1c64f2;"><i class="bi bi-person-plus"></i></div>
+                        <div>
+                            <div class="fw-bold" style="font-size: 0.85rem;">Asignar pasantía</div>
+                            <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Asignar estudiantes a una empresa</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn tarjeta-accion-rapida bg-white border border-secondary-subtle p-3 d-flex align-items-center gap-3 w-100 text-start">
+                        <div class="icono-accion d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="background-color: #f0fdf4; color: #16a34a;"><i class="bi bi-clock-history"></i></div>
+                        <div>
+                            <div class="fw-bold" style="font-size: 0.85rem;">Registrar horas</div>
+                            <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Registrar horas laborales de un estudiante</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn tarjeta-accion-rapida bg-white border border-secondary-subtle p-3 d-flex align-items-center gap-3 w-100 text-start">
+                        <div class="icono-accion d-flex align-items-center justify-content-center fs-4 flex-shrink-0" style="background-color: #eff6ff; color: #1c64f2;"><i class="bi bi-person-plus"></i></div>
+                        <div>
+                            <div class="fw-bold" style="font-size: 0.85rem;">Asignar pasantía</div>
+                            <div class="text-muted" style="font-size: 0.7rem; line-height: 1.2;">Asignar estudiantes a una empresa</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm p-2 overflow-hidden rounded-4 bg-white">
+                <div class="table-responsive">
+                    <table class="table table-hover table-borderless align-middle mb-0 tabla-estudiantes">
+                        <thead>
+                            <tr class="border-bottom border-light-subtle">
+                                <th class="p-3 text-capitalize fw-semibold">Estudiante</th>
+                                <th class="p-3 text-capitalize fw-semibold">Grupo</th>
+                                <th class="p-3 text-capitalize fw-semibold">Horas completadas</th>
+                                <th class="text-center p-3 text-capitalize fw-semibold">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-bottom border-light-subtle">
+                                <td class="p-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-estudiante rounded-circle"></div>
+                                        <span>Nombre del estudiante</span>
+                                    </div>
+                                </td>
+                                <td class="p-3">2 Software A - G1</td>
+                                <td class="p-3" style="width: 35%;">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-muted small text-nowrap">30 / 200</span>
+                                        <div class="progress w-100" style="height: 6px;">
+                                            <div class="progress-bar bg-danger" style="width: 15%"></div>
+                                        </div>
+                                        <span class="text-muted small">15%</span>
+                                    </div>
+                                </td>
+                                <td class="text-center p-3"><span class="badge-estado estado-riesgo fw-semibold d-inline-block">En riesgo</span></td>
+                            </tr>
+                            <tr class="border-bottom border-light-subtle">
+                                <td class="p-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-estudiante rounded-circle"></div>
+                                        <span>Nombre del estudiante</span>
+                                    </div>
+                                </td>
+                                <td class="p-3">2 Software A - G1</td>
+                                <td class="p-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-muted small text-nowrap">40 / 200</span>
+                                        <div class="progress w-100" style="height: 6px;">
+                                            <div class="progress-bar bg-danger" style="width: 20%"></div>
+                                        </div>
+                                        <span class="text-muted small">20%</span>
+                                    </div>
+                                </td>
+                                <td class="text-center p-3"><span class="badge-estado estado-riesgo fw-semibold d-inline-block">En riesgo</span></td>
+                            </tr>
+                            <tr class="border-bottom border-light-subtle">
+                                <td class="p-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-estudiante rounded-circle"></div>
+                                        <span>Nombre del estudiante</span>
+                                    </div>
+                                </td>
+                                <td class="p-3">2 Software A - G1</td>
+                                <td class="p-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-muted small text-nowrap">60 / 200</span>
+                                        <div class="progress w-100" style="height: 6px;">
+                                            <div class="progress-bar bg-warning" style="width: 30%"></div>
+                                        </div>
+                                        <span class="text-muted small">30%</span>
+                                    </div>
+                                </td>
+                                <td class="text-center p-3"><span class="badge-estado estado-atencion fw-semibold d-inline-block">Atención</span></td>
+                            </tr>
+                            <tr class="border-bottom border-light-subtle">
+                                <td class="p-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-estudiante rounded-circle"></div>
+                                        <span>Nombre del estudiante</span>
+                                    </div>
+                                </td>
+                                <td class="p-3">2 Software A - G1</td>
+                                <td class="p-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-muted small text-nowrap">150 / 200</span>
+                                        <div class="progress w-100" style="height: 6px;">
+                                            <div class="progress-bar bg-success" style="width: 75%"></div>
+                                        </div>
+                                        <span class="text-muted small">75%</span>
+                                    </div>
+                                </td>
+                                <td class="text-center p-3"><span class="badge-estado estado-avanzado fw-semibold d-inline-block">Avanzado</span></td>
+                            </tr>
+                            <tr class="border-bottom border-light-subtle">
+                                <td class="p-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="avatar-estudiante rounded-circle"></div>
+                                        <span>Nombre del estudiante</span>
+                                    </div>
+                                </td>
+                                <td class="p-3">2 Software A - G1</td>
+                                <td class="p-3">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="text-muted small text-nowrap">200 / 200</span>
+                                        <div class="progress w-100" style="height: 6px;">
+                                            <div class="progress-bar bg-info" style="width: 100%"></div>
+                                        </div>
+                                        <span class="text-muted small">100%</span>
+                                    </div>
+                                </td>
+                                <td class="text-center p-3"><span class="badge-estado estado-completado fw-semibold d-inline-block">Completado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <aside class="col-lg-3 col-xl-3 mb-4">
+            <div class="card border-0 shadow-sm p-4 d-flex flex-column gap-4 rounded-4 bg-white">
+                
+                <div class="d-flex align-items-center gap-3">
+                    <div class="icono-metrica d-flex align-items-center justify-content-center text-white fs-5" style="background-color: #1c64f2;"><i class="bi bi-people-fill"></i></div>
+                    <div>
+                        <div class="text-muted small fw-medium" style="font-size: 0.8rem;">Estudiantes a cargo</div>
+                        <h2 class="fw-bold mb-0" style="font-size: 2rem; color: #111827;">92</h2>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                    <div class="icono-metrica d-flex align-items-center justify-content-center text-white fs-5" style="background-color: #16a34a;"><i class="bi bi-clock-fill"></i></div>
+                    <div>
+                        <div class="text-muted small fw-medium" style="font-size: 0.8rem;">Horas sociales registradas</div>
+                        <h2 class="fw-bold mb-0" style="font-size: 2rem; color: #111827;">4,250</h2>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                    <div class="icono-metrica d-flex align-items-center justify-content-center text-white fs-5" style="background-color: #7c3aed;"><i class="bi bi-briefcase-fill"></i></div>
+                    <div>
+                        <div class="text-muted small fw-medium" style="font-size: 0.8rem;">Pasantías activas</div>
+                        <h2 class="fw-bold mb-0" style="font-size: 2rem; color: #111827;">18</h2>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

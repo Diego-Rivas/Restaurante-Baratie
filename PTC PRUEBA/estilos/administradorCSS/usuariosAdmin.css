@@ -1,0 +1,40 @@
+ /* --- Únicamente el CSS que Bootstrap no puede replicar con clases nativas --- */
+        :root {
+            --nav-oscuro: #121826;
+            --azul-primario: #1c64f2;
+        }
+        body {
+            background-color: #f4f5f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar-personalizada {
+            background-color: var(--nav-oscuro);
+            border-radius: 25px;
+        }
+        .nav-link {
+            color: #9ca3af !important;
+            transition: 0.3s;
+        }
+        .nav-link:hover { color: #ffffff !important; }
+        .nav-link.nav-activo {
+            background-color: #1a56db;
+            color: #ffffff !important;
+        }
+        .menu-lateral-usuarios .nav-link-lateral {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #1f2937;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .menu-lateral-usuarios .nav-link-lateral:hover { background-color: #f3f4f6; }
+        .menu-lateral-usuarios .nav-link-lateral.activo {
+            background-color: #eff6ff;
+            color: var(--azul-primario);
+        }
+        .input-personalizado:focus {
+            border-color: #bfdbfe;
+            box-shadow: 0 0 0 3px rgba(28, 100, 242, 0.1);
+            outline: none;
+        }

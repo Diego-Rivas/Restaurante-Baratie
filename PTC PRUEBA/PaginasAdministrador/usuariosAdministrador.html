@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrador - Usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/administradorCSS/usuariosAdmin.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-personalizada mx-4 mt-3 mb-4 px-4 py-2 shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold me-4" href="#">
+                <span class="text-warning">●</span> RICALDONE
+            </a>
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavegacion">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavegacion">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fw-medium mx-1 px-3 py-2 rounded-5" href="./indexadministrador.html"><i class="bi bi-house-door me-1"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium mx-1 px-3 py-2 rounded-5" href="./docentesAdministrador.html"><i class="bi bi-person-badge me-1"></i> Docentes</a></li>
+                    <li class="nav-item"><a class="nav-link nav-activo fw-medium mx-1 px-3 py-2 rounded-5" href="./usuariosAdministrador.html"><i class="bi bi-people me-1"></i> Usuarios</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium mx-1 px-3 py-2 rounded-5" href="./especialidadGruposAdministrador.html"><i class="bi bi-tags me-1"></i> Especialidades & grupos</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-block">
+                <div class="bg-white rounded-5 px-3 py-1 d-flex align-items-center" style="width: 250px;">
+                    <input type="text" class="form-control border-0 bg-transparent p-0 small" placeholder="Busca estudiantes..." style="box-shadow: none; font-size: 0.85rem;">
+                    <i class="bi bi-search text-muted ms-2"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-4" style="font-size: 0.9rem; color: #1f2937;">
+        <div class="row">
+            
+            <aside class="col-xl-2 col-lg-3 mb-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 text-center mb-3 bg-white">
+                    <div class="rounded-circle bg-secondary-subtle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                        <i class="bi bi-person-fill text-white" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="fw-bold mb-0">Admin</h5>
+                    <p class="text-muted small mb-3">Lic. Carlos Mendoza</p>
+                    <a href="#" class="btn text-white w-100 rounded-pill py-2 fw-semibold" style="background-color: var(--azul-primario); border:none;">Ver mi perfil</a>
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4 p-2 bg-white">
+                    <nav class="menu-lateral-usuarios d-flex flex-column">
+                        <a href="#" class="nav-link-lateral p-2 fw-bold rounded-3 mb-1"><i class="bi bi-person-gear fs-5"></i> Admin</a>
+                        <a href="#" class="nav-link-lateral p-2 fw-bold rounded-3 mb-1"><i class="bi bi-person-video3 fs-5"></i> Docentes</a>
+                        <a href="#" class="nav-link-lateral activo p-2 fw-bold rounded-3 mb-1"><i class="bi bi-mortarboard fs-5"></i> Estudiantes</a>
+                        <a href="#" class="nav-link-lateral p-2 fw-bold rounded-3"><i class="bi bi-building fs-5"></i> Empresas</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <main class="col-xl-10 col-lg-9">
+                <div class="row g-3">
+                    
+                    <div class="col-xl-4 col-md-5 mb-3">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 h-100 bg-white">
+                            <h5 class="fw-bold mb-0">Nuevo usuario</h5>
+                            <span class="text-muted small d-block mb-4">Completa los datos del registro</span>
+
+                            <form>
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <label class="fw-bold text-dark d-block mb-1 ms-1" style="font-size: 0.75rem;">Nombre</label>
+                                        <input type="text" class="form-control input-personalizado border-secondary-subtle rounded-3 p-2 shadow-sm" placeholder="Nombre" style="font-size: 0.85rem;">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="fw-bold text-dark d-block mb-1 ms-1" style="font-size: 0.75rem;">Apellido</label>
+                                        <input type="text" class="form-control input-personalizado border-secondary-subtle rounded-3 p-2 shadow-sm" placeholder="Apellido" style="font-size: 0.85rem;">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="fw-bold text-dark d-block mb-1 ms-1" style="font-size: 0.75rem;">Correo electrónico</label>
+                                    <input type="email" class="form-control input-personalizado border-secondary-subtle rounded-3 p-2 shadow-sm" placeholder="Correo" style="font-size: 0.85rem;">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="fw-bold text-dark d-block mb-1 ms-1" style="font-size: 0.75rem;">Especialidad</label>
+                                    <select class="form-select input-personalizado border-secondary-subtle rounded-3 p-2 shadow-sm" style="font-size: 0.85rem;">
+                                        <option selected disabled>Especialidad</option>
+                                        <option>Software</option>
+                                        <option>Diseño</option>
+                                    </select>
+                                </div>
+
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <label class="fw-bold text-dark d-block mb-1 ms-1" style="font-size: 0.75rem;">Tipo de usuario</label>
+                                        <input type="password" class="form-control input-personalizado border-secondary-subtle rounded-3 p-2 shadow-sm" placeholder="contraseña" style="font-size: 0.85rem;">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="fw-bold text-dark d-block mb-1 ms-1" style="font-size: 0.75rem;">Tipo de usuario</label>
+                                        <input type="password" class="form-control input-personalizado border-secondary-subtle rounded-3 p-2 shadow-sm" placeholder="Contraseña" style="font-size: 0.85rem;">
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mb-4">
+                                    <div class="col-6">
+                                        <label class="fw-bold text-dark d-block mb-1 ms-1" style="font-size: 0.75rem;">Grupo</label>
+                                        <select class="form-select input-personalizado border-secondary-subtle rounded-3 p-2 shadow-sm" style="font-size: 0.85rem;">
+                                            <option>Grupo 1</option>
+                                            <option>Grupo 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="fw-bold text-dark d-block mb-1 ms-1" style="font-size: 0.75rem;">Año académico</label>
+                                        <select class="form-select input-personalizado border-secondary-subtle rounded-3 p-2 shadow-sm" style="font-size: 0.85rem;">
+                                            <option>2 año</option>
+                                            <option>1 año</option>
+                                            <option>3 año</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-2 justify-content-start">
+                                    <button type="submit" class="btn btn-secondary flex-grow-1 fw-bold border-0 p-2 text-dark rounded-3 bg-secondary-subtle" style="font-size: 0.85rem;">Registrar</button>
+                                    <button type="button" class="btn btn-light flex-grow-1 fw-bold border-0 p-2 text-dark rounded-3 bg-body-secondary" style="font-size: 0.85rem;">Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8 col-md-7 mb-3">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 h-100 bg-white">
+                            <h5 class="fw-bold mb-0">Usuarios recientes</h5>
+                            <span class="text-muted small d-block mb-3">Últimos registros en el sistema</span>
+
+                            <div class="table-responsive">
+                                <table class="table text-start align-middle mb-0" style="font-size: 0.85rem;">
+                                    <thead>
+                                        <tr class="table-secondary text-secondary">
+                                            <th style="width: 5%;" class="rounded-start p-3 border-0"></th>
+                                            <th style="width: 25%;" class="p-3 border-0">Nombre</th>
+                                            <th style="width: 35%;" class="p-3 border-0">Correo</th>
+                                            <th style="width: 20%;" class="p-3 border-0">Especialidad</th>
+                                            <th style="width: 15%;" class="rounded-end p-3 border-0">Rol</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border-bottom: 1px solid #f3f4f6;">
+                                            <td class="p-3"><span class="d-inline-block bg-secondary-subtle rounded" style="width: 18px; height: 18px;"></span></td>
+                                            <td class="fw-bold p-3">Nombre Usuario</td>
+                                            <td class="p-3"><a href="#" class="text-dark text-decoration-none">CorreoDePrueba@gmail.com</a></td>
+                                            <td class="p-3">Nombre Usuario</td>
+                                            <td class="fw-bold p-3">Admin</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid #f3f4f6;">
+                                            <td class="p-3"><span class="d-inline-block bg-secondary-subtle rounded" style="width: 18px; height: 18px;"></span></td>
+                                            <td class="fw-bold p-3">Nombre Usuario</td>
+                                            <td class="p-3"><a href="#" class="text-dark text-decoration-none">CorreoDePrueba@gmail.com</a></td>
+                                            <td class="p-3">Nombre Usuario</td>
+                                            <td class="fw-bold p-3">Admin</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid #f3f4f6;">
+                                            <td class="p-3"><span class="d-inline-block bg-secondary-subtle rounded" style="width: 18px; height: 18px;"></span></td>
+                                            <td class="fw-bold p-3">Nombre Usuario</td>
+                                            <td class="p-3"><a href="#" class="text-dark text-decoration-none">CorreoDePrueba@gmail.com</a></td>
+                                            <td class="p-3">Nombre Usuario</td>
+                                            <td class="fw-bold p-3">Admin</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid #f3f4f6;">
+                                            <td class="p-3"><span class="d-inline-block bg-secondary-subtle rounded" style="width: 18px; height: 18px;"></span></td>
+                                            <td class="fw-bold p-3">Nombre Usuario</td>
+                                            <td class="p-3"><a href="#" class="text-dark text-decoration-none">CorreoDePrueba@gmail.com</a></td>
+                                            <td class="p-3">Nombre Usuario</td>
+                                            <td class="fw-bold p-3">Admin</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid #f3f4f6;">
+                                            <td class="p-3"><span class="d-inline-block bg-secondary-subtle rounded" style="width: 18px; height: 18px;"></span></td>
+                                            <td class="fw-bold p-3">Nombre Usuario</td>
+                                            <td class="p-3"><a href="#" class="text-dark text-decoration-none">CorreoDePrueba@gmail.com</a></td>
+                                            <td class="p-3">Nombre Usuario</td>
+                                            <td class="fw-bold p-3">Admin</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

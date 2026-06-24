@@ -1,0 +1,60 @@
+:root {
+            --nav-oscuro: #121826;
+            --azul-primario: #1c64f2;
+        }
+
+        body {
+            background-color: #f4f5f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* --- Estilos personalizados indispensables --- */
+        .navbar-personalizada {
+            background-color: var(--nav-oscuro);
+        }
+        .nav-link {
+            color: #9ca3af !important;
+            transition: 0.3s;
+        }
+        .nav-link:hover { color: #ffffff !important; }
+        .nav-link.nav-activo {
+            background-color: #1a56db;
+            color: #ffffff !important;
+        }
+
+        /* Puntos decorativos de títulos */
+        .punto-azul::before {
+            content: "●";
+            color: #1c64f2;
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+        .punto-verde::before {
+            content: "●";
+            color: #10b981;
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+
+        /* --- Elementos de Listas Registradas --- */
+        .item-especialidad {
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .btn-accion-mini {
+            background-color: #374151;
+            color: white;
+            width: 28px;
+            height: 28px;
+            transition: 0.2s;
+        }
+        .btn-accion-mini:hover { background-color: #1f2937; }
+
+        /* --- Badges de Grupos --- */
+        .badge-periodo {
+            background-color: #def7ec;
+            color: #03543f;
+        }
+        .caja-estudiantes-badge {
+            background-color: #2563eb;
+            min-width: 90px;
+        }
